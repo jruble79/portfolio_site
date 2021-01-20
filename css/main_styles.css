@@ -10,7 +10,9 @@
 
 h1,
 h2,
-h3 {
+h3,
+p,
+li {
     font-family: 'Lora';
     margin: 0;
 }
@@ -23,24 +25,35 @@ h1 {
 
 h2 {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.5rem;
 }
 
-h3 {
+h3, 
+li {
     font-style: italic;
     font-weight: 500;
     font-size: 1rem;
 }
 
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
 body {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 
 
 /* Class Selectors */
+
+.intro {
+    padding-top: 2rem;
+}
 
 .outer-section {
     padding-bottom: 1rem;
@@ -49,6 +62,19 @@ body {
 
 .section-id, .job-title {
     display: inline-block;
+}
+
+.list-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.list-content ul li {
+    display: inline-block;
+    margin-right: 1rem;
+
 }
 
 .section-id {
