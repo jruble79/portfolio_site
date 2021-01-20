@@ -60,7 +60,7 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin: 0;
-    border-top: 1px solid black;
+    border-top: 1px dashed rgb(180, 180, 180);
 }
 
 .list-content {
@@ -71,7 +71,8 @@ body {
 /* Psuedo Selectors */
 
 .inner-section:last-child {
-    padding-bottom: 0;
+    /* Reset to 0 is the extra space doesn't work */
+    padding-bottom: 1rem; 
 }
 
 /* Toggle Effect */
