@@ -1,0 +1,62 @@
+
+
+/* Class Selectors */
+
+.intro {
+    padding-top: 2rem;
+}
+
+.outer-section {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.section-id, .job-title {
+    display: inline-block;
+}
+
+.list-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.list-content ul li {
+    display: inline-block;
+    margin-right: 1rem;
+
+}
+
+.section-id {
+    padding-top: 1rem;
+    cursor: pointer;
+}
+
+.inner-section {
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0;
+    border-top: 1px dashed rgb(180, 180, 180);
+}
+
+.list-content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+
+/* Psuedo Selectors */
+
+.inner-section:last-child {
+    /* Reset to 0 is the extra space doesn't work */
+    padding-bottom: 1rem; 
+}
+
+/* Toggle Effect */
+
+input:checked ~ .list-content {
+    max-height: 100%;
+    padding-top: 1rem;
+}
