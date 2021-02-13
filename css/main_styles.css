@@ -7,6 +7,7 @@
 
 h1, h2, h3 {
     font-family: 'Playfair Display', cursive;
+    text-align: center;
 }
 
 h4 {
@@ -26,7 +27,7 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
 }
 
 h4 {
@@ -46,6 +47,8 @@ a {
 }
 
 nav, main, footer {
+    margin: auto;
+    max-width: 450px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -84,11 +87,14 @@ nav ul {
 
 /* - - - - - INTRODUCTION STYLES - - - - - */
 
-img {
-    height: 90vw;
+.heroimg img {
+    height: 75vw;
     width: 100vw;
     object-position: center;
     object-fit: cover;
+    /* background-image: linear-gradient( rgba(88, 88, 88, 0), white 90%), url("http://placeimg.com/1440/832/animals");
+    background-position: center;
+    background-size: cover; */
 }
 
 .introduction h1 {
@@ -97,8 +103,14 @@ img {
 
 /* - - - - - HIGHLIGHTS STYLES - - - - - */
 
+.highlights {
+    display: flex;
+    flex-direction: column;
+}
+
 .imagehighlight {
     height: calc( ((50vw - 2.25rem) * 2) + 1.75rem );
+    max-height: 412px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -110,6 +122,8 @@ img {
 .imagehighlight img {
     width: calc( 50vw - 2.25rem );
     height: calc( 50vw - 2.25rem );
+    max-width: 194px;
+    max-height: 194px;
 }
 
 .storyhighlights {
@@ -121,9 +135,10 @@ img {
 }
 
 .storymod {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     align-content: center;
+    justify-content: center;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px dashed rgb(168, 168, 168);
@@ -134,9 +149,16 @@ img {
     padding-bottom: 0;
 }
 
+.storymod a {
+    display: flex;
+    max-width: 340px;
+}
+
 .storymod img {
     height: calc( ((100vw - 4rem) / 3) - 1rem );
     width: calc( ((100vw - 4rem) / 3) - 1rem );
+    max-width: 80px;
+    max-height: 80px;
     margin-right: 1rem;
 }
 
@@ -155,11 +177,14 @@ img {
 
 /* - - - - - FOOTER STYLES - - - - - */
 
+footer {
+    margin-top: 3rem;
+}
 
 footer img {
     display: initial;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
     border-radius: 50%;
     margin-right: .5rem;
 }
@@ -172,7 +197,7 @@ footer ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 footer li {
@@ -187,6 +212,7 @@ footer a {
 
 footer p {
     font-size: x-small;
+    text-align: center;
     margin-top: .5rem;
     padding-bottom: 2rem;
 }
