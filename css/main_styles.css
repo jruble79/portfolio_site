@@ -23,6 +23,7 @@ h1 {
 
 h2 {
     font-size: 1.75rem;
+    margin-bottom: 3rem;
 }
 
 h3 {
@@ -39,9 +40,18 @@ p, ul {
     font-weight: 400;
 }
 
+ul, li {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
     color: initial;
+}
+
+a:hover {
+    opacity: 50%;
 }
 
 nav, main, footer {
@@ -49,7 +59,6 @@ nav, main, footer {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     max-width: 450px;
-
 }
 
 
@@ -76,7 +85,6 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    padding-inline-start: 0;
     margin-top: 1rem;
     margin-bottom: 0;
 }
@@ -96,12 +104,21 @@ nav ul a {
     margin-bottom: 5rem;
 }
 
-.introduction img {
+.hero {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
     align-self: center;
-    width: 75%;
+    overflow: hidden;
     border-radius: 50%;
     margin-bottom: 1rem;
-    box-shadow: 0px -20px 20px -20px rgba(0,0,0,50%);
+}
+
+.hero img {
+    height: 100%;
+    object-fit: cover;
+
 }
 
 .introduction p {
@@ -126,35 +143,32 @@ nav ul a {
 .highlights {
     display: flex;
     flex-direction: column;
-}
-
-.highlights h2 {
-    margin-top: 0;
-    margin-bottom: 3rem;
+    align-items: flex-start;
 }
 
 .imagehighlight {
-    height: calc( ((50vw - 2.25rem) * 4) + 4rem );
-    max-height: calc( (194px * 4) + 4rem );
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
+    margin-block-start: 0;
+    line-height: 0;
     margin-bottom: 3rem;
 }
 
+.imagehighlight li {
+    width: 48%;
+    height: max-content;
+    margin-bottom: 4%;
+}
+
 .imagehighlight img {
-    width: calc( 50vw - 2.25rem );
-    height: calc( 50vw - 2.25rem );
-    max-width: 194px;
-    max-height: 194px;
-    border-radius: 5px;
+    width: 100%;
 }
 
 .storyhighlights {
     display: flex;
     flex-direction: column;
+    width: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
     border-top: 1px dotted rgb(168, 168, 168);
@@ -186,12 +200,10 @@ nav ul a {
 }
 
 .storymod img {
-    height: calc( ((100vw - 4rem) / 3) - 1rem );
-    width: calc( ((100vw - 4rem) / 3) - 1rem );
+    width: 100%;
     max-width: 100px;
     max-height: 100px;
     margin-right: 1rem;
-    border-radius: 5px;
 }
 
 .story {
@@ -204,10 +216,8 @@ nav ul a {
 }
 
 .story h4 {
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
-
-
 
 
 /* - - - - - FOOTER STYLES - - - - - */
@@ -217,7 +227,6 @@ footer {
 }
 
 footer img {
-    display: initial;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -227,8 +236,6 @@ footer img {
 footer ul {
     margin-top: 0;
     margin-bottom: 0;
-    padding-inline-start: 0;
-    list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -257,16 +264,110 @@ footer p {
 
 /* - - - - - MEDIA QUERIES - - - - - */
 
+@media (max-width: 300px) {
+
+    .site-title {
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        margin-bottom: 1rem;
+    }
+
+    .introduction p {
+        text-align: left;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .storymod img {
+        display: none;
+    }
+
+    .story > * {
+        text-align: center;
+    }
+}
+
 @media (min-width: 700px) {
 
-    nav, footer {
-        max-width: 730px;
+    nav, main, footer {
+        max-width: 700px;
     }
 
     nav {
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 1rem;
     }
+
+    .hero {
+        width: 700px;
+        height: 350px;
+        border-radius: 0;
+    }
+
+    .hero img {
+        border-radius: 0;
+        width: 100%;
+        height: initial;
+    }
+
+    .introduction h1, .introduction h4, .introduction p {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .highlights {
+        flex-direction: row;
+    }
+
+    .imagehighlight {
+        margin-left: 2rem;
+        margin-bottom: 0;
+    }
+
+    .storyhighlights {
+        align-self: center;
+        order: -1;
+        padding: 0;
+        border-top: 0;
+        border-bottom: 0;
+    }
+
+    .storymod {
+        justify-content: left;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .storymod a {
+        width: 340px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    .hero {
+        width: 1000px;
+        height: 500px;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .introduction h1, .introduction h4, .introduction p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 
 
 }
