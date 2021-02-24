@@ -85,7 +85,6 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    /* margin-top: 1rem; */
     margin-bottom: 0;
 }
 
@@ -123,8 +122,6 @@ nav ul a {
 
 .introduction p {
     text-align: left;
-    padding-left: 1rem;
-    padding-right: 1rem;
     margin-top: 0;
 }
 
@@ -156,7 +153,7 @@ nav ul a {
 }
 
 .imagehighlight li {
-    width: 48%;
+    max-width: 48%;
     height: max-content;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -197,7 +194,6 @@ nav ul a {
 
 .storymod a {
     display: flex;
-    max-width: 340px;
 }
 
 .storymod img {
@@ -244,7 +240,8 @@ footer ul {
 }
 
 footer li {
-    padding-right: 1.5rem;
+    padding-right: .75rem;
+    padding-left: .75rem;
     line-height: 3rem;
 }
 
@@ -256,8 +253,11 @@ footer a {
 footer p {
     font-size: x-small;
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
+    border-top: 1px dotted rgb(168, 168, 168);
+
 }
 
 
@@ -308,8 +308,8 @@ footer p {
     }
 
     .hero {
-        width: 700px;
-        height: 350px;
+        width: 100vw;
+        height: 60vw;
         border-radius: 0;
     }
 
@@ -319,36 +319,39 @@ footer p {
         height: initial;
     }
 
-    .introduction h1, .introduction h4, .introduction p {
-        padding-left: 4rem;
-        padding-right: 4rem;
+    .introduction h1 {
+        font-size: 4rem;
     }
 
-    .highlights {
-        flex-direction: row;
+    .introduction h4 {
+        font-size: 1.5rem;
     }
 
-    .imagehighlight {
-        margin-left: 2rem;
-        margin-bottom: 0;
+    .introduction p {
+        font-size: 1.15rem;
+    }
+
+    .imagehighlight li {
+        max-width: calc((100% / 3) - 1%);
+        margin-top: 1%;
+        margin-bottom: 1%;
     }
 
     .storyhighlights {
-        align-self: center;
-        order: -1;
-        padding: 0;
+        /* order: -1; */
+        /* padding: 0;
         border-top: 0;
-        border-bottom: 0;
+        border-bottom: 0; */
     }
 
     .storymod {
-        justify-content: left;
+        width: 100%;
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
 
     .storymod a {
-        width: 340px;
+        width: 100%;
     }
 
 }
@@ -365,12 +368,14 @@ footer p {
     }
 
     .hero {
-        width: 1000px;
-        height: 550px;
+        max-height: 650px;
+        box-shadow: inset 0 100px 100px rgba(0,0,0,.5);
     }
 
     .hero img {
         width: 100%;
+        mix-blend-mode: multiply;
+        background-color: linear-gradient(black 25% white);
     }
 
     .introduction, h2, .highlights, footer {
