@@ -1,15 +1,24 @@
+// Define target parent for selection
+const listDiv = document.querySelectorAll(".collapsible-list");
 
+// Loop through constants
+for (let i=0; i<listDiv.length; i++) {
 
-// Show/Hide Resume Sections
+    // Select LI Element
+    listDiv[i].addEventListener('click', (event) => {
+        if (event.target.tagName == 'LI') {
+            const collapsible = event.target.querySelector('ul');
+            toggle(collapsible);
+        }
+    });
 
-function toggleList() {
-    const section = document.getElementById('section');
+    // Toggle UL Element
+    function toggle(collapsible) {
+        if (collapsible.style.display == 'block') {
+            collapsible.style.display = 'none';
+        } else {
+            collapsible.style.display = 'block';
+        }
+    };
 
-    if (section.style.display == 'block') {
-        section.style.display = 'none';
-    } else {
-        section.style.display = 'block';
-    }
-
-}
-
+};
