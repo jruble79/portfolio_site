@@ -1,12 +1,12 @@
-
-
-body {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+h1 {
+    padding-bottom: 1.5rem;
 }
 
-main {
-    padding: 0;
+.introduction, aside {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 450px;
+    margin: auto;
 }
 
 .container {
@@ -19,8 +19,9 @@ h4 {
 
 .collapsible-list > li {
     cursor: pointer;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
     border-top: 1px dotted rgb(168, 168, 168);
 }
 
@@ -30,6 +31,7 @@ h4 {
 
 .collapsible-list li ul {
     display: none;
+    text-align: left;
     padding-top: 1rem;
 }
 
