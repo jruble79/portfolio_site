@@ -60,7 +60,7 @@ nav, main, footer {
     margin: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    max-width: 450px;
+    /* max-width: 450px; */
 }
 
 
@@ -294,6 +294,13 @@ footer p {
 
     .story > * {
         text-align: center;
+    }
+}
+
+@media (max-width: 699px) {
+
+    nav, main, aside, footer {
+        max-width: 450px;
     }
 }
 
