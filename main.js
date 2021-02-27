@@ -6,11 +6,12 @@ for (let i=0; i<listDiv.length; i++) {
 
     // Select LI Element
     listDiv[i].addEventListener('click', (event) => {
-        if (event.target.tagName == 'LI') {
+        if (event.target.tagName == 'LI' && event.target.className != 'not-toggle') {
             const collapsible = event.target.querySelector('ul');
             toggle(collapsible);
         }
     });
+
 
     // Toggle UL Element
     function toggle(collapsible) {
