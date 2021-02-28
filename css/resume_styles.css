@@ -41,18 +41,32 @@ h4 {
     font-weight: 500;
 }
 
-.skills li ul {
+#skills {
+    margin-bottom: 3rem;
+}
+
+#skills li ul {
     text-align: center;
 }
 
-.skills li ul li {
+#skills li ul li {
     display: inline-block;
     padding: .5rem;
     background-color: rgb(194, 248, 255);
     margin-bottom: .25rem;
 }
 
-.skills li ul li:hover {
+#skills li ul li:hover {
     background-color: rgb(223, 255, 255);
     transition: .25s;
+}
+
+#awards li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px dotted rgb(168, 168, 168);
+}
+
+#awards li:last-child {
+    border-bottom: 1px dotted rgb(168, 168, 168);
 }
