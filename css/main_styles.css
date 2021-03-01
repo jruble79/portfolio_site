@@ -269,19 +269,6 @@ footer p {
 
 @media (max-width: 300px) {
 
-    .site-title {
-        margin-bottom: 1rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav li {
-        margin-bottom: 1rem;
-    }
-
     .introduction p {
         text-align: left;
         padding-left: 0;
@@ -299,21 +286,15 @@ footer p {
 
 @media (max-width: 699px) {
 
-    nav, main, aside, footer {
+    main {
         max-width: 450px;
     }
 }
 
 @media (min-width: 700px) {
 
-    nav, main, footer {
+    main {
         max-width: 700px;
-    }
-
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 1rem;
     }
 
     .hero {
@@ -346,13 +327,6 @@ footer p {
         margin-bottom: 1%;
     }
 
-    .storyhighlights {
-        /* order: -1; */
-        /* padding: 0;
-        border-top: 0;
-        border-bottom: 0; */
-    }
-
     .storymod {
         width: 100%;
         padding-top: 2rem;
@@ -366,15 +340,6 @@ footer p {
 }
 
 @media (min-width: 1000px) {
-
-    nav {
-        position: relative;
-        z-index: 1;
-    }
-
-    nav a {
-        color: white;
-    }
 
     .hero {
         max-height: 650px;
