@@ -6,17 +6,16 @@ h4 {
     margin: 0;
 }
 
-.introduction, aside {
+.summary, aside {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     max-width: 450px;
     margin: auto;
 }
 
-.container {
+main {
     margin-bottom: 3rem;
 }
-
 
 .collapsible-list > li {
     cursor: pointer;
@@ -69,4 +68,25 @@ h4 {
 
 #awards li:last-child {
     border-bottom: 1px dotted rgb(168, 168, 168);
+}
+
+
+/* - - - - - MEDIA QUERIES - - - - - */
+
+@media (min-width: 700px) {
+
+    .container {
+        display: flex;
+        max-width: 700px;
+        margin: auto;
+        align-content: flex-start;
+    }
+
+    main {
+        
+    }
+
+    aside {
+        flex-shrink: 2;
+    }
 }
