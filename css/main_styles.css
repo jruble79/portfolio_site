@@ -1,42 +1,14 @@
 
-
-
-/* - - - - - NAV STYLES - - - - - */
-
-nav {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-#site-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: 'Alfa Slab One', cursive;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    text-align: center;
-    align-self: center;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-bottom: 0;
-}
-
-nav ul a {
-    text-transform: uppercase;
-    margin-right: 1rem;
-    margin-left: 1rem;
+main {
+    margin: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 
 /* - - - - - INTRODUCTION STYLES - - - - - */
 
-.introduction {
+#introduction {
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
@@ -59,16 +31,16 @@ nav ul a {
 
 }
 
-.introduction p {
+#introduction p {
     text-align: left;
     margin-top: 0;
 }
 
-.introduction h1 {
+#introduction h1 {
     margin-bottom: 0;
 }
 
-.introduction h4 {
+#introduction h4 {
     text-align: center;
     margin-top: 1rem;
 }
@@ -76,13 +48,13 @@ nav ul a {
 
 /* - - - - - HIGHLIGHTS STYLES - - - - - */
 
-.highlights {
+#highlights {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.imagehighlight {
+#imagehighlight {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -91,18 +63,18 @@ nav ul a {
     margin-bottom: 3rem;
 }
 
-.imagehighlight li {
+#imagehighlight li {
     max-width: 48%;
     height: max-content;
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
-.imagehighlight img {
+#imagehighlight img {
     width: 100%;
 }
 
-.storyhighlights {
+#storyhighlights {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -156,57 +128,11 @@ nav ul a {
 }
 
 
-/* - - - - - FOOTER STYLES - - - - - */
-
-footer {
-    margin-top: 3rem;
-}
-
-footer img {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    margin-right: .5rem;
-}
-
-footer ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-footer li {
-    padding-right: .75rem;
-    padding-left: .75rem;
-    line-height: 3rem;
-}
-
-footer a {
-    display: flex;
-    align-items: center;
-}
-
-footer p {
-    font-size: x-small;
-    text-align: center;
-    margin-top: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    border-top: 1px dotted rgb(168, 168, 168);
-
-}
-
-
-
-
 /* - - - - - MEDIA QUERIES - - - - - */
 
 @media (max-width: 300px) {
 
-    .introduction p {
+    #introduction p {
         text-align: left;
         padding-left: 0;
         padding-right: 0;
@@ -246,19 +172,15 @@ footer p {
         height: initial;
     }
 
-    .introduction h1 {
+    #introduction h1 {
         font-size: 4rem;
     }
 
-    .introduction h4 {
+    #introduction h4 {
         font-size: 1.5rem;
     }
 
-    .introduction p {
-        font-size: 1.15rem;
-    }
-
-    .imagehighlight li {
+    #imagehighlight li {
         max-width: calc((100% / 3) - 1%);
         margin-top: 1%;
         margin-bottom: 1%;
@@ -289,16 +211,23 @@ footer p {
         background-color: linear-gradient(black 25% white);
     }
 
-    .introduction, h2, .highlights, footer {
+    #introduction, h2, #highlights, footer {
         position: relative;
         top: -88px;
     }
 
-    .introduction h1, .introduction h4, .introduction p {
+    #introduction h1, #introduction h4, #introduction p {
         padding-left: 0;
         padding-right: 0;
     }
 
+    nav {
+        position: relative;
+        z-index: 1;
+    }
 
+    nav a {
+        color: white;
+    }
 
 }
