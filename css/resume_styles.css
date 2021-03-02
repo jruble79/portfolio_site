@@ -1,15 +1,16 @@
-h1 {
-    padding-bottom: 1.5rem;
-}
 
 h4 {
     margin: 0;
 }
 
-.summary, aside {
+#summary {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+#summary, aside, main {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    max-width: 450px;
     margin: auto;
 }
 
@@ -30,7 +31,7 @@ main {
 }
 
 .collapsible-list li ul {
-    display: none;
+    /* display: none; */
     padding-top: 1rem;
     text-align: left;
 }
@@ -41,8 +42,10 @@ main {
 }
 
 #skills {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    /* border-bottom: 1px dotted rgb(168, 168, 168); */
 }
+
 
 #skills li ul {
     text-align: center;
@@ -51,12 +54,13 @@ main {
 #skills li ul li {
     display: inline-block;
     padding: .5rem;
-    background-color: rgb(194, 248, 255);
+    color: white;
+    background-color: rgb(65, 65, 65);
     margin-bottom: .25rem;
 }
 
 #skills li ul li:hover {
-    background-color: rgb(223, 255, 255);
+    background-color: rgb(17, 98, 145);
     transition: .25s;
 }
 
@@ -75,18 +79,81 @@ main {
 
 @media (min-width: 700px) {
 
+    #summary {
+        width: 100vw;
+        height: 60vw;
+        background-color: rgb(17, 98, 145);
+        margin-bottom: 5rem;
+    }
+
+    #summary h1, #summary p {
+        position: relative;
+        bottom: -20vw;
+        width: 600px;
+        color: white;
+        margin: auto;
+    }
+
+    #summary h1 {
+        margin-bottom: 3rem;
+    }
+
+    #summary p {
+        text-align: center;
+    }
+
     .container {
         display: flex;
-        max-width: 700px;
+        align-items: flex-start;
+        width: 700px;
         margin: auto;
-        align-content: flex-start;
     }
 
     main {
-        
+        margin: 0;
+        margin-right: 3rem;
+        width: 400px;
+    }
+
+    .collapsible-list:last-child {
+        border-bottom: 0;
     }
 
     aside {
-        flex-shrink: 2;
+        width: 200px;
+        padding: 0;
+        margin: 0;
     }
+
+    #skills ul li ul li {
+        font-size: .75rem;
+    }
+
+    #awards li:last-child {
+        border-bottom: 0;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    #summary {
+        max-height: 650px;
+        box-shadow: inset 0 100px 100px rgba(0,0,0,.5);
+    }
+
+    #summary, .container, footer {
+        position: relative;
+        top: -88px;
+    }
+
+    nav {
+        position: relative;
+        z-index: 1;
+    }
+
+    nav a {
+        color: white;
+    }
+
 }
