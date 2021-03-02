@@ -1,6 +1,4 @@
 
-
-
 /* - - - - - GLOBAL STYLES - - - - - */
 
 * {
@@ -13,25 +11,25 @@ h1, h2, h3 {
     text-align: center;
 }
 
-h4 {
+h4, p, ul {
     font-family: 'Lora', serif;
+}
+
+h4 {
     font-weight: 700;
     font-size: 1.25rem;
 }
 
 h1 {
     font-size: 3rem;
-    margin-top: 1rem;
 }
 
 h2 {
     font-size: 1.75rem;
-    margin-bottom: 3rem;
 }
 
 h3 {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
 }
 
 h4 {
@@ -39,7 +37,6 @@ h4 {
 }
 
 p, ul {
-    font-family: 'Lora', serif;
     font-weight: 400;
 }
 
@@ -57,13 +54,88 @@ a:hover {
     opacity: 50%;
 }
 
-nav, main, footer {
+nav, footer {
     margin: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    /* max-width: 450px; */
 }
 
+
+/* - - - - - NAV STYLES - - - - - */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#site-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-align: center;
+    align-self: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+nav ul a {
+    text-transform: uppercase;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+
+/* - - - - - FOOTER STYLES - - - - - */
+
+footer {
+    margin-top: 6rem;
+}
+
+footer img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+footer ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer li {
+    padding-right: .75rem;
+    padding-left: .75rem;
+    line-height: 3rem;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    font-size: x-small;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-top: 1px dotted rgb(168, 168, 168);
+
+}
 
 
 /* - - - - - MEDIA QUERIES - - - - - */
@@ -112,8 +184,8 @@ nav, main, footer {
         z-index: 1;
     }
 
-    nav a {
+    /* nav a {
         color: white;
-    }
+    } */
 
 }
