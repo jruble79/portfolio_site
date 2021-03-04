@@ -15,9 +15,9 @@ h4, p, ul {
     font-family: 'Lora', serif;
 }
 
-h4 {
+h4, span {
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
 }
 
 h1 {
