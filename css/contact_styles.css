@@ -1,0 +1,99 @@
+
+#welcome > * {
+    text-align: center;
+    max-width: 450px;
+    padding: 0 1.5rem;
+    margin: auto;
+}
+
+#welcome {
+    margin-bottom: 5rem;
+}
+
+#welcome h2 {
+    margin-bottom: 2rem;
+}
+
+form > * {
+    display: block;
+}
+
+form {
+    max-width: 450px;
+    margin: auto;
+    margin-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+label, button {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+input, textarea {
+    outline: none;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+input:focus, textarea:focus {
+    background-color: white;
+    outline: rgb(185, 185, 185) solid 3px
+}
+
+input {
+    height: 3rem;
+}
+
+textarea {
+    height: 12rem;
+}
+
+button {
+    border: none;
+    padding: 1rem 3rem;
+}
+
+/* - - - - - MEDIA QUERIES - - - - - */
+
+
+@media (min-width: 700px) {
+
+    #welcome, .container, footer {
+        position: relative;
+        top: -88px;
+    }
+
+    #welcome {
+        width: 100vw;
+        height: 60vw;
+        max-height: 650px;
+        background-color: rgb(17, 98, 145);
+        margin-bottom: 0;
+    }
+
+    #welcome h2, #welcome p {
+        position: relative;
+        bottom: -50%;
+        width: 600px;
+        color: white;
+        margin: auto;
+    }
+
+    #welcome h2 {
+        margin-bottom: 3rem;
+    }
+
+    #welcome p {
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+    }
+
+}
+
