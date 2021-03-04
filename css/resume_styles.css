@@ -81,10 +81,7 @@ main details:last-child {
 
 @media (min-width: 700px) {
 
-    nav {
-        position: relative;
-        z-index: 1;
-    }
+    
 
     nav a {
         color: white;
