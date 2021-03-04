@@ -97,7 +97,10 @@ nav ul a {
 /* - - - - - FOOTER STYLES - - - - - */
 
 footer {
+    /* bottom: 100vh; */
     margin-top: 6rem;
+    padding-top: 3rem;
+    background-color: rgb(189, 189, 189);
 }
 
 footer img {
@@ -108,8 +111,7 @@ footer img {
 }
 
 footer ul {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -131,10 +133,9 @@ footer p {
     font-size: x-small;
     text-align: center;
     margin-top: 3rem;
+    margin-bottom: 0;
     padding-top: 1rem;
     padding-bottom: 2rem;
-    border-top: 1px dotted rgb(168, 168, 168);
-
 }
 
 
@@ -158,14 +159,22 @@ footer p {
 
 @media (max-width: 699px) {
 
-    nav, footer {
+    nav, footer ul {
         max-width: 450px;
     }
+
+    
 }
 
 @media (min-width: 700px) {
 
-    nav, footer {
+
+    nav {
+        position: relative;
+        z-index: 1;
+    }
+
+    nav, footer ul {
         max-width: 700px;
     }
 
@@ -173,6 +182,10 @@ footer p {
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 1rem;
+    }
+
+    footer {
+        position: sticky;
     }
 
 }
@@ -183,9 +196,5 @@ footer p {
         position: relative;
         z-index: 1;
     }
-
-    /* nav a {
-        color: white;
-    } */
 
 }
