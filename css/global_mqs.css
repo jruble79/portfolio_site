@@ -11,7 +11,7 @@ h1, h2, h3 {
     text-align: center;
 }
 
-h4, p, ul {
+h4, p, ul, label, button, input, textarea {
     font-family: 'Lora', serif;
 }
 
@@ -100,7 +100,7 @@ footer {
     /* bottom: 100vh; */
     margin-top: 6rem;
     padding-top: 3rem;
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(240, 240, 240);
 }
 
 footer img {
