@@ -1,104 +1,120 @@
 
-h4 {
-    margin: 0;
-}
-
-#summary {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-}
-
-#summary, aside, main {
+#welcome, main, aside {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    margin: auto;
 }
 
-main {
+#welcome, main, #skills, #awards {
     margin-bottom: 3rem;
 }
 
-.collapsible-list > li {
-    cursor: pointer;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+
+
+
+summary {
     text-align: center;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none; 
+}
+
+details summary::before { 
+    content: '\00002b'; 
+  }
+
+details[open] summary::before { 
+    content: '\002212'; 
+  }
+
+summary:hover {
+    cursor: pointer;
+}
+
+summary:focus {
+    outline: none;
+}
+
+summary p, details p {
+    margin-bottom: 0;
+}
+
+
+
+
+details, #awards li {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     border-top: 1px dotted rgb(168, 168, 168);
 }
 
-.collapsible-list:last-child {
+details:last-child, #awards li:last-child {
     border-bottom: 1px dotted rgb(168, 168, 168);
 }
 
-.collapsible-list li ul {
-    /* display: none; */
-    padding-top: 1rem;
-    text-align: left;
+main details:last-child {
+    border-bottom: 0;
 }
 
-.collapsible-list > li::first-line {
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-#skills {
-    margin-bottom: 4rem;
-    /* border-bottom: 1px dotted rgb(168, 168, 168); */
-}
-
-
-#skills li ul {
+#skills ul {
     text-align: center;
 }
 
-#skills li ul li {
+#skills ul li {
     display: inline-block;
     padding: .5rem;
     color: white;
-    background-color: rgb(65, 65, 65);
+    
+    background-color: rgb(184, 150, 0);
     margin-bottom: .25rem;
 }
 
-#skills li ul li:hover {
-    background-color: rgb(17, 98, 145);
+#skills ul li:hover {
+    background-color: rgb(65, 65, 65);
     transition: .25s;
-}
+} 
 
-#awards li {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-top: 1px dotted rgb(168, 168, 168);
-}
-
-#awards li:last-child {
-    border-bottom: 1px dotted rgb(168, 168, 168);
-}
 
 
 /* - - - - - MEDIA QUERIES - - - - - */
 
 @media (min-width: 700px) {
 
-    #summary {
+    nav {
+        position: relative;
+        z-index: 1;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    #welcome, .container, footer {
+        position: relative;
+        top: -88px;
+    }
+
+    #welcome {
         width: 100vw;
         height: 60vw;
         background-color: rgb(17, 98, 145);
         margin-bottom: 5rem;
     }
 
-    #summary h1, #summary p {
+    #welcome h1, #welcome p {
         position: relative;
-        bottom: -20vw;
+        bottom: -50%;
         width: 600px;
         color: white;
         margin: auto;
     }
 
-    #summary h1 {
+    #welcome h1 {
         margin-bottom: 3rem;
     }
 
-    #summary p {
+    #welcome p {
         text-align: center;
     }
 
@@ -115,9 +131,6 @@ main {
         width: 400px;
     }
 
-    .collapsible-list:last-child {
-        border-bottom: 0;
-    }
 
     aside {
         width: 200px;
@@ -125,7 +138,7 @@ main {
         margin: 0;
     }
 
-    #skills ul li ul li {
+    #skills ul li {
         font-size: .75rem;
     }
 
@@ -137,23 +150,8 @@ main {
 
 @media (min-width: 1000px) {
 
-    #summary {
+    #welcome {
         max-height: 650px;
-        box-shadow: inset 0 100px 100px rgba(0,0,0,.5);
-    }
-
-    #summary, .container, footer {
-        position: relative;
-        top: -88px;
-    }
-
-    nav {
-        position: relative;
-        z-index: 1;
-    }
-
-    nav a {
-        color: white;
     }
 
 }
