@@ -157,17 +157,12 @@ footer p {
     }
 }
 
-/* @media (max-width: 699px) {
-
-    nav, footer ul {
-        max-width: 450px;
-    }
-
-    
-} */
 
 @media (min-width: 660px) {
 
+    nav a {
+        color: white;
+    }
 
     nav {
         position: relative;
@@ -186,15 +181,6 @@ footer p {
 
     footer {
         position: sticky;
-    }
-
-}
-
-@media (min-width: 1000px) {
-
-    nav {
-        position: relative;
-        z-index: 1;
     }
 
 }

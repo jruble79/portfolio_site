@@ -153,12 +153,14 @@ aside, #introduction {
     }
 }
 
+@media (min-width: 500px) {
+    #imagehighlight {
+        width: 90%;
+    }
+}
 
 @media (min-width: 660px) {
 
-    nav a {
-        color: white;
-    }
 
     #hero img {
         width: 100%;
@@ -171,7 +173,8 @@ aside, #introduction {
         top: -88px;
     }
 
-    main, #introduction {
+    #introduction {
+        width: 75%;
         max-width: 700px;
     }
 
@@ -189,7 +192,7 @@ aside, #introduction {
     }
 
     #imagehighlight li {
-        max-width: calc((100% / 3) - 1%);
+        width: calc((100% / 3) - 1%);
         margin-top: 1%;
         margin-bottom: 1%;
     }
@@ -202,19 +205,6 @@ aside, #introduction {
 
     .storymod a {
         width: 100%;
-    }
-
-}
-
-@media (min-width: 1000px) {
-
-    /* .hero {
-        max-height: 650px;
-    } */
-
-    #introduction h1, #introduction h4, #introduction p {
-        padding-left: 0;
-        padding-right: 0;
     }
 
 }
