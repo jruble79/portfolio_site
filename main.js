@@ -1,25 +1,22 @@
-// Define target parent for selection
-const listDiv = document.querySelectorAll(".collapsible-list");
 
-// Loop through constants
-for (let i=0; i<listDiv.length; i++) {
+/////////////////////////////////////////////////////////////////////
+// DETAILS OPENER
+// Opens the resume.html details sections in Main 
+// when #Container display is set to "flex"
+/////////////////////////////////////////////////////////////////////
 
-    // Select LI Element
-    listDiv[i].addEventListener('click', (event) => {
-        if (event.target.tagName == 'LI' && event.target.className != 'not-toggle') {
-            const collapsible = event.target.querySelector('ul');
-            toggle(collapsible);
-        }
-    });
+const jobDetails = document.querySelectorAll("main details");
+const container = document.getElementById("container");
 
+window.addEventListener('load', openDetails);
+window.addEventListener('resize', openDetails);
 
-    // Toggle UL Element
-    function toggle(collapsible) {
-        if (collapsible.style.display == 'block') {
-            collapsible.style.display = 'none';
+function openDetails() {
+    for (let i = 0; i < jobDetails.length; i++) {
+        if (window.getComputedStyle(container).display == "block") {
+            jobDetails[i].removeAttribute("open");
         } else {
-            collapsible.style.display = 'block';
-        }
-    };
-
-};
+            jobDetails[i].setAttribute("open", "");
+        };
+    }
+}
