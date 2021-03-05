@@ -1,5 +1,6 @@
 
-main, #introduction {
+aside, #introduction {
+    /* max-width: 500px;; */
     margin: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -9,6 +10,7 @@ main, #introduction {
 /* - - - - - INTRODUCTION STYLES - - - - - */
 
 #introduction {
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
@@ -19,6 +21,8 @@ main, #introduction {
     justify-content: center;
     width: 300px;
     height: 300px;
+    background-color: rgb(17, 98, 145);
+
     align-self: center;
     overflow: hidden;
     border-radius: 50%;
@@ -26,6 +30,7 @@ main, #introduction {
 }
 
 .hero img {
+
     height: 100%;
     object-fit: cover;
 
@@ -50,12 +55,13 @@ main, #introduction {
 
 #highlights {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #imagehighlight {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-block-start: 0;
@@ -77,6 +83,7 @@ main, #introduction {
 #storyhighlights {
     display: flex;
     flex-direction: column;
+    max-width: 350px;
     width: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -132,14 +139,13 @@ main, #introduction {
 
 @media (max-width: 300px) {
 
-    #introduction p {
-        text-align: left;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
     .storymod img {
         display: none;
+    }
+
+    #imagehighlight li {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
     }
 
     .story > * {
@@ -147,14 +153,8 @@ main, #introduction {
     }
 }
 
-@media (max-width: 699px) {
 
-    main, #introduction {
-        max-width: 450px;
-    }
-}
-
-@media (min-width: 700px) {
+@media (min-width: 660px) {
 
     nav a {
         color: white;
@@ -163,7 +163,7 @@ main, #introduction {
     .hero img {
         width: 100%;
         mix-blend-mode: multiply;
-        background-color: linear-gradient(black 25% white);
+        /* background-color: linear-gradient(black 25% white); */
     }
 
     #introduction, h2, #highlights, footer {
@@ -171,13 +171,14 @@ main, #introduction {
         top: -88px;
     }
 
-    main {
+    main, #introduction {
         max-width: 700px;
     }
 
     .hero {
         width: 100vw;
         height: 60vw;
+        max-height: 650px;
         border-radius: 0;
     }
 
@@ -207,9 +208,9 @@ main, #introduction {
 
 @media (min-width: 1000px) {
 
-    .hero {
+    /* .hero {
         max-height: 650px;
-    }
+    } */
 
     #introduction h1, #introduction h4, #introduction p {
         padding-left: 0;

@@ -60,7 +60,7 @@ button {
 /* - - - - - MEDIA QUERIES - - - - - */
 
 
-@media (min-width: 700px) {
+@media (min-width: 660px) {
 
     #welcome, .container, footer {
         position: relative;

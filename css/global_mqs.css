@@ -121,7 +121,7 @@ footer ul {
 footer li {
     padding-right: .75rem;
     padding-left: .75rem;
-    line-height: 3rem;
+    margin-bottom: 1rem;
 }
 
 footer a {
@@ -157,16 +157,16 @@ footer p {
     }
 }
 
-@media (max-width: 699px) {
+/* @media (max-width: 699px) {
 
     nav, footer ul {
         max-width: 450px;
     }
 
     
-}
+} */
 
-@media (min-width: 700px) {
+@media (min-width: 660px) {
 
 
     nav {
