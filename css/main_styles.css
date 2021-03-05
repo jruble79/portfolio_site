@@ -16,7 +16,7 @@ aside, #introduction {
     margin-bottom: 5rem;
 }
 
-.hero {
+#hero {
     display: flex;
     justify-content: center;
     width: 300px;
@@ -29,7 +29,7 @@ aside, #introduction {
     margin-bottom: 1rem;
 }
 
-.hero img {
+#hero img {
 
     height: 100%;
     object-fit: cover;
@@ -160,7 +160,7 @@ aside, #introduction {
         color: white;
     }
 
-    .hero img {
+    #hero img {
         width: 100%;
         mix-blend-mode: multiply;
         /* background-color: linear-gradient(black 25% white); */
@@ -175,14 +175,14 @@ aside, #introduction {
         max-width: 700px;
     }
 
-    .hero {
+    #hero {
         width: 100vw;
         height: 60vw;
         max-height: 650px;
         border-radius: 0;
     }
 
-    .hero img {
+    #hero img {
         border-radius: 0;
         width: 100%;
         height: initial;
