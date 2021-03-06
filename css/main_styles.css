@@ -58,6 +58,9 @@ aside, #introduction {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    margin-top: 3rem;
+    /* align-items: center; */
+    /* align-content: center; */
 }
 
 
@@ -65,12 +68,13 @@ aside, #introduction {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     margin-bottom: 3rem;
 }
 
 #slides {
-    height: 300px;
+    height: calc(100vw - 3rem);
+    max-height: 400px;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -89,7 +93,7 @@ aside, #introduction {
 #slide-nav {
     display: inline-flex;
     justify-content: center;
-    padding: 10px 0;
+    padding-top: 3rem;
 }
 
 #slide-nav a {
@@ -103,7 +107,6 @@ aside, #introduction {
 #storyhighlights {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     max-width: 400px;
     width: 100%;
     padding-top: 3rem;
@@ -158,7 +161,7 @@ aside, #introduction {
 
 /* - - - - - MEDIA QUERIES - - - - - */
 
-@media (max-width: 300px) {
+@media (max-width: 350px) {
 
     .storymod img {
         display: none;
@@ -178,7 +181,7 @@ aside, #introduction {
         mix-blend-mode: multiply;
     }
 
-    #introduction, h2, #highlights, footer {
+    #introduction, h2, #highlights {
         position: relative;
         top: -88px;
     }
@@ -203,12 +206,35 @@ aside, #introduction {
 
     .storymod {
         width: 100%;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
     }
 
     .storymod a {
         width: 100%;
     }
 
+}
+
+@media (min-width: 820px) {
+
+    #highlights {
+        flex-direction: row-reverse;
+    }
+
+    #carousel {
+        height: 100%;
+    }
+
+    #storyhighlights {
+        border: 0;
+        padding: 0;
+        max-width: 350px;
+        margin-right: 2rem;
+    }
+
+    .storymod {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    
 }
