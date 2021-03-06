@@ -60,30 +60,51 @@ aside, #introduction {
     justify-content: center;
 }
 
-#imagehighlight {
+
+#carousel {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-block-start: 0;
-    line-height: 0;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
     margin-bottom: 3rem;
 }
 
-#imagehighlight li {
-    max-width: 48%;
-    height: max-content;
-    margin-top: 2%;
-    margin-bottom: 2%;
+#slides {
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;;
 }
 
-#imagehighlight img {
-    width: 100%;
+#slides > *, .slide {
+    height: 100%;
+}
+
+#slides > * {
+    scroll-snap-align: center;
+}
+
+
+#slide-nav {
+    display: inline-flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#slide-nav a {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background: rgb(128, 128, 128);
 }
 
 #storyhighlights {
     display: flex;
     flex-direction: column;
-    max-width: 350px;
+    justify-content: center;
+    max-width: 400px;
     width: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -94,10 +115,10 @@ aside, #introduction {
 .storymod {
     display: flex;
     flex-direction: row;
-    align-content: center;
-    justify-content: center;
+    align-self: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    max-width: 350px;
     border-bottom: 1px dotted rgb(168, 168, 168);
 }
 
@@ -143,21 +164,11 @@ aside, #introduction {
         display: none;
     }
 
-    #imagehighlight li {
-        max-width: 100%;
-        margin-bottom: 1.5rem;
-    }
-
     .story > * {
         text-align: center;
     }
 }
 
-@media (min-width: 500px) {
-    #imagehighlight {
-        width: 90%;
-    }
-}
 
 @media (min-width: 660px) {
 
@@ -165,7 +176,6 @@ aside, #introduction {
     #hero img {
         width: 100%;
         mix-blend-mode: multiply;
-        /* background-color: linear-gradient(black 25% white); */
     }
 
     #introduction, h2, #highlights, footer {
@@ -189,12 +199,6 @@ aside, #introduction {
         border-radius: 0;
         width: 100%;
         height: initial;
-    }
-
-    #imagehighlight li {
-        width: calc((100% / 3) - 1%);
-        margin-top: 1%;
-        margin-bottom: 1%;
     }
 
     .storymod {
