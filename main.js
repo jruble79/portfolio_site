@@ -20,3 +20,23 @@ function openDetails() {
         };
     }
 }
+
+
+/////////////////////////////////////////////////////////////////////
+// CONTACT FORM VALIDATION
+// XxXxXx 
+// XxXxXx
+/////////////////////////////////////////////////////////////////////
+
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("mail");
+const msgInput = document.getElementById("msg");
+
+// Check if input value is blank after leaving focus
+// Display error message if true
+
+
+
+// Check if emailInput value is a valid address (check for "@" ?)
+// Display error message if false
+
