@@ -110,6 +110,11 @@ footer img {
     margin-right: .5rem;
 }
 
+footer img:hover {
+    transform: scale(150%);
+    transition: .25s;
+}
+
 footer ul {
     margin: auto;
     display: flex;
