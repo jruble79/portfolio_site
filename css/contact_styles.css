@@ -58,6 +58,11 @@ button {
     padding: 1rem 3rem;
 }
 
+button:active {
+    color: white;
+    background-color: rgb(17, 98, 145);
+}
+
 /* - - - - - MEDIA QUERIES - - - - - */
 
 
