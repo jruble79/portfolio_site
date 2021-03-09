@@ -103,6 +103,10 @@ footer {
     background-color: rgb(240, 240, 240);
 }
 
+footer a:hover {
+    opacity: 100%;
+}
+
 footer img {
     width: 2rem;
     height: 2rem;
@@ -112,7 +116,7 @@ footer img {
 
 footer img:hover {
     transform: scale(150%);
-    transition: .25s;
+    transition: .1s;
 }
 
 footer ul {
