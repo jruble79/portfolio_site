@@ -28,15 +28,28 @@ function openDetails() {
 // XxXxXx
 /////////////////////////////////////////////////////////////////////
 
+const form = document.getElementById("form");
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("mail");
 const msgInput = document.getElementById("msg");
 
+
 // Check if input value is blank after leaving focus
 // Display error message if true
 
+form.addEventListener("focusout", (event) => {
+    if (event.target.value == "") {
+        event.target.style.background = "red";
+        event.target.nextSibling.nextSibling.innerHTML = '<p class="error">KJLKJWHLJKW</p>';
+    } 
+});
 
-
-// Check if emailInput value is a valid address (check for "@" ?)
-// Display error message if false
+emailInput.addEventListener("focusout", (event) => {
+    if (emailInput.value.includes("@")) {
+        emailInput.style.background = "inherit";
+    } else {
+        event.target.style.background = "red";
+        event.target.nextSibling.nextSibling.innerHTML = '<p class="error">KJLKJWHLJKW</p>';
+    }
+});
 
