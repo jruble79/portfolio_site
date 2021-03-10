@@ -1,6 +1,5 @@
 
 aside, #introduction {
-    /* max-width: 500px;; */
     margin: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -30,10 +29,10 @@ aside, #introduction {
 }
 
 #hero img {
-
     height: 100%;
     object-fit: cover;
-
+    filter: grayscale(100%);
+    mix-blend-mode: soft-light;
 }
 
 #introduction p {
@@ -178,7 +177,7 @@ aside, #introduction {
 
     #hero img {
         width: 100%;
-        mix-blend-mode: multiply;
+        /* mix-blend-mode: multiply; */
     }
 
     #introduction, h2, #highlights {

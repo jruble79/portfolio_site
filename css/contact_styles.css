@@ -27,9 +27,18 @@ form {
     padding-right: 1.5rem;
 }
 
+.error {
+    font-weight: 700;
+    color: red;
+}
+
 label, button {
     font-weight: 700;
     margin-bottom: 1rem;
+}
+
+label:not(:first-child), button {
+    margin-top: 3rem;
 }
 
 input, textarea {
@@ -37,7 +46,6 @@ input, textarea {
     border: none;
     background-color: rgb(240, 240, 240);
     width: 100%;
-    margin-bottom: 3rem;
 }
 
 input:focus, textarea:focus {

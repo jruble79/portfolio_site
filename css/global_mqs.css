@@ -103,20 +103,11 @@ footer {
     background-color: rgb(240, 240, 240);
 }
 
-footer a:hover {
-    opacity: 100%;
-}
-
 footer img {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
     margin-right: .5rem;
-}
-
-footer img:hover {
-    transform: scale(150%);
-    transition: .1s;
 }
 
 footer ul {
@@ -133,11 +124,6 @@ footer li {
     margin-bottom: 1rem;
 }
 
-footer a {
-    display: flex;
-    align-items: center;
-}
-
 footer p {
     font-size: x-small;
     text-align: center;
@@ -146,6 +132,8 @@ footer p {
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
+
+
 
 
 /* - - - - - MEDIA QUERIES - - - - - */
