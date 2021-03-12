@@ -66,8 +66,8 @@ nav, footer {
 nav {
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 #site-title {
@@ -97,7 +97,6 @@ nav ul a {
 /* - - - - - FOOTER STYLES - - - - - */
 
 footer {
-    /* bottom: 100vh; */
     margin-top: 6rem;
     padding-top: 3rem;
     background-color: rgb(240, 240, 240);
@@ -107,7 +106,6 @@ footer img {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    margin-right: .5rem;
 }
 
 footer ul {
@@ -127,7 +125,6 @@ footer li {
 footer p {
     font-size: x-small;
     text-align: center;
-    margin-top: 3rem;
     margin-bottom: 0;
     padding-top: 1rem;
     padding-bottom: 2rem;
@@ -161,9 +158,12 @@ footer p {
         color: white;
     }
 
-    nav {
+    header {
         position: relative;
         z-index: 1;
+        background-color: rgba(17, 98, 145, 50%);
+        width: 100vw;
+
     }
 
     nav, footer ul {
@@ -173,12 +173,10 @@ footer p {
     nav {
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 1rem;
     }
 
     footer {
         margin-top: 0;
-        position: sticky;
     }
 
 }

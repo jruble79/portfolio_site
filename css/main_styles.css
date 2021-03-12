@@ -58,8 +58,6 @@ aside, #introduction {
     flex-direction: row;
     justify-content: center;
     margin-top: 3rem;
-    /* align-items: center; */
-    /* align-content: center; */
 }
 
 
@@ -182,7 +180,7 @@ aside, #introduction {
 
     #introduction, h2, #highlights {
         position: relative;
-        top: -88px;
+        top: -102px;
     }
 
     #introduction {
