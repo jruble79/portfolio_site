@@ -17,6 +17,9 @@ h4, p, ul, label, button, input, textarea {
 h4, span {
     font-weight: 700;
 }
+h4 {
+    font-size: 1.2rem;
+}
 p, ul {
     font-weight: 400;
 }
@@ -43,6 +46,9 @@ header {
 #splash {
     grid-area: splash;
 }
+#highlights {
+    grid-area: highlights;
+}
 footer {
     grid-area: footer;
 }
@@ -54,6 +60,7 @@ body {
     grid-template-areas: 
     "header"
     "splash"
+    "highlights"
     "footer"
     ;
 }
@@ -103,13 +110,11 @@ nav a, nav ul {
 #splash {
     grid-row-start: 1;
 }
-
 #hero {
     position: relative;
     background-color: rgba(17, 98, 145, 85%);
     height: 400px;
 }
-
 #hero::after {
     content: "";
     background: url("../images/hero-culdesac.jpg");
@@ -126,30 +131,24 @@ nav a, nav ul {
     position: absolute;
     z-index: -1;   
 }
-
 #text-overlay {
     position: relative;
     top: 60%;
 }
-
 #hero h1, #hero h4 {
+    text-align: center;
     color: white;
 }
-
 #splash-text, #hero h1, #hero h4 {
     width: 75%;
     margin: auto;
 }
-
 #hero h1 {
     font-size: 3rem;
 }
-
 #hero h4 {
-    font-size: 1.25rem;
     margin-top: .5rem;
 }
-
 #splash-text {
     margin-top: 3rem;
 }
