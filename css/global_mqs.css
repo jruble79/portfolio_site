@@ -40,8 +40,8 @@ a:hover {
 header {
     grid-area: header;
 }
-main {
-    grid-area: main;
+#splash {
+    grid-area: splash;
 }
 footer {
     grid-area: footer;
@@ -53,7 +53,7 @@ body {
     grid-template-rows: 1fr;
     grid-template-areas: 
     "header"
-    "main"
+    "splash"
     "footer"
     ;
 }
