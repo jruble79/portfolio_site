@@ -16,8 +16,6 @@ h4, p, ul, label, button, input, textarea {
 }
 h4, span {
     font-weight: 700;
-}
-h4 {
     font-size: 1.2rem;
 }
 p, ul {
@@ -49,6 +47,9 @@ header {
 #highlights {
     grid-area: highlights;
 }
+#container {
+    grid-area: container;
+}
 footer {
     grid-area: footer;
 }
@@ -61,6 +62,7 @@ body {
     "header"
     "splash"
     "highlights"
+    "container"
     "footer"
     ;
 }
