@@ -1,73 +1,66 @@
 
-#welcome, main, aside {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+
+#container {
+    width: 75%;
+    margin: auto;
 }
-
-#welcome, main, #skills, #awards {
-    margin-bottom: 3rem;
-}
-
-
-summary {
+h2 {
     text-align: center;
-    list-style: none;
 }
+main, #skills, #awards {
+    margin: 6rem 0;
+}
+
+
+/* - - - - - DETAILS SUMMARY STYLES - - - - - */
+
 
 summary::marker {
     display: none; 
 }
-
-details summary::before { 
+details span::before { 
     content: '\00002b'; 
+    color: rgb(17, 98, 145);
   }
-
-details[open] summary::before { 
+details[open] span::before { 
     content: '\002212'; 
+    color: rgb(17, 98, 145);
   }
-
 summary:hover {
     cursor: pointer;
 }
-
 summary:focus {
     outline: none;
 }
-
+summary {
+    text-align: center;
+    list-style: none;
+}
 summary p, details p {
     margin-bottom: 0;
 }
-
-
-
-
+summary p {
+    margin-top: .25rem;
+}
 details, #awards li {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-top: 1px dotted rgb(168, 168, 168);
 }
-
 details:last-child, #awards li:last-child {
     border-bottom: 1px dotted rgb(168, 168, 168);
 }
-
-main details:last-child {
-    border-bottom: 0;
-}
-
 #skills ul {
     text-align: center;
 }
-
 #skills ul li {
     display: inline-block;
+    cursor: pointer;
     padding: .5rem;
     color: white;
-    
-    background-color: rgb(184, 150, 0);
+    background-color: rgb(17, 98, 145);
     margin-bottom: .25rem;
 }
-
 #skills ul li:hover {
     background-color: rgb(65, 65, 65);
     transition: .25s;
@@ -77,70 +70,3 @@ main details:last-child {
 
 /* - - - - - MEDIA QUERIES - - - - - */
 
-@media (min-width: 660px) {
-
-    #welcome, #container, footer {
-        position: relative;
-        top: -102px;
-    }
-
-    #welcome {
-        width: 100vw;
-        height: 60vw;
-        background-color: rgb(17, 98, 145);
-        margin-bottom: 5rem;
-    }
-
-    #welcome h1, #welcome p {
-        position: relative;
-        bottom: -50%;
-        width: 600px;
-        color: white;
-        margin: auto;
-    }
-
-    #welcome h1 {
-        margin-bottom: 3rem;
-    }
-
-    #welcome p {
-        text-align: center;
-    }
-
-    #container {
-        display: flex;
-        align-items: flex-start;
-        width: 700px;
-        margin: auto;
-    }
-
-    main {
-        margin: 0;
-        margin-right: 3rem;
-        width: 400px;
-    }
-
-
-    aside {
-        width: 200px;
-        padding: 0;
-        margin: 0;
-    }
-
-    #skills ul li {
-        font-size: .75rem;
-    }
-
-    #awards li:last-child {
-        border-bottom: 0;
-    }
-
-}
-
-@media (min-width: 900px) {
-
-    #welcome {
-        max-height: 650px;
-    }
-
-}
