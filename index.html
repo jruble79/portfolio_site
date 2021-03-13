@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lora:wght@400;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main_styles.css">
+    <!-- <link rel="stylesheet" href="css/main_styles.css"> -->
     <link rel="stylesheet" href="css/global_mqs.css">
 </head>
 
@@ -18,7 +18,6 @@
         <nav role="navigation">
             <a id="site-title" href="index.html">JEFF RUBLE</a>
             <ul>
-                <!-- <li><a href="#">Design</a></li> -->
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -26,23 +25,28 @@
     
     </header>
 
-    <main id="introduction">
+
+    <main id="splash">
         <div id="hero">
-            <img src="images/hero-culdesac.jpg" alt="">
+            <div id="text-overlay">
+                <h1>Hello!</h1>
+                <h4>Let me introduce myself.</h4>
+            </div>
+            <!-- <img src="images/hero-culdesac.jpg" alt=""> -->
         </div>
-        <h1>Hello!</h1>
-        <h4>Let me introduce myself.</h4>
-        <p>My name is Jeff Ruble and I have 18 years of experience in the news industry and recently worked with Gannett as a designer for USA Today where I produced editorial layouts and illustrations. I have extensive experience in developing design systems and brainstorming solutions for design problems in fast-paced and deadline-driven environments.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id ipsum placerat, lacinia enim sit amet, condimentum quam. Donec massa sem, faucibus non metus vitae, varius suscipit purus. Praesent in blandit nulla, id feugiat leo. Sed ornare arcu ac purus laoreet, nec posuere quam gravida. In ac placerat mauris. Aliquam fermentum vehicula iaculis.</p>
+        <div id="splash-text">
+            <p>My name is Jeff Ruble and I have 18 years of experience in the news industry and recently worked with Gannett as a designer for USA Today where I produced editorial layouts and illustrations. I have extensive experience in developing design systems and brainstorming solutions for design problems in fast-paced and deadline-driven environments.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id ipsum placerat, lacinia enim sit amet, condimentum quam. Donec massa sem, faucibus non metus vitae, varius suscipit purus. Praesent in blandit nulla, id feugiat leo. Sed ornare arcu ac purus laoreet, nec posuere quam gravida. In ac placerat mauris. Aliquam fermentum vehicula iaculis.</p>
+        </div>
     </main>
 
-    <aside>
+    <!-- <aside>
 
         <h2>Recent Highlights</h2>
 
-        <div id="highlights">
+        <section id="highlights">
             
-            <section id="carousel">
+            <div id="carousel">
 
                 <div id="slides">
                     <img class="slide" id="slide-1" src="images/projects/thumb-welcometotheriver.jpg" alt="">
@@ -62,7 +66,7 @@
                     <a href="#slide-6"></a>
                 </div>
 
-            </section>
+            </div>
 
             <div id="storyhighlights">
                 
@@ -97,9 +101,8 @@
                 </section>
 
             </div>
-
-        </div>
-    </aside>
+        </section>
+    </aside> -->
 
     <footer>
         <h3>Let's Stay Connected</h3>

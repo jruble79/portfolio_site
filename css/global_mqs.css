@@ -1,14 +1,42 @@
+/* - - - - - GRID SETUP - - - - - */
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
 
 /* - - - - - GLOBAL STYLES - - - - - */
 
+html {
+    font-size: 14px;
+}
+
 * {
     box-sizing: border-box;
-    font-size: 14px;
 }
 
 h1, h2, h3 {
     font-family: 'Playfair Display', cursive;
-    text-align: center;
 }
 
 h4, p, ul, label, button, input, textarea {
@@ -17,23 +45,6 @@ h4, p, ul, label, button, input, textarea {
 
 h4, span {
     font-weight: 700;
-    font-size: 1.3rem;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 1.75rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
-h4 {
-    font-size: 1.25rem;
 }
 
 p, ul {
@@ -54,129 +65,144 @@ a:hover {
     opacity: 50%;
 }
 
-nav, footer {
-    margin: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
 
 /* - - - - - NAV STYLES - - - - - */
 
+header {
+    z-index: 1;
+    width: 100vw;
+    height: max-content;
+    /* background-color: rgba(17, 98, 145, 50%); */
+    padding: 1.5rem;
+}
+
 nav {
     display: flex;
-    flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 230px;
+    margin: auto;
 }
 
 #site-title {
-    margin-top: 0;
-    margin-bottom: 0;
     font-family: 'Alfa Slab One', cursive;
-    font-size: 2rem;
+    font-size: 1.7rem;
     letter-spacing: 1px;
     text-align: center;
-    align-self: center;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-bottom: 0;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    margin: 1rem 0 0;
 }
 
-nav ul a {
-    text-transform: uppercase;
-    margin-right: 1rem;
-    margin-left: 1rem;
+nav li {
+    padding: 0 1rem;
+}
+
+nav a, nav ul {
+    color: white;
+}
+
+
+
+
+/* - - - - - SPLASH STYLES - - - - - */
+
+
+#splash {
+    grid-row-start: 1;
+}
+
+#hero {
+    position: relative;
+    background-color: rgba(17, 98, 145, 85%);
+    height: 400px;
+}
+
+#hero::after {
+    content: "";
+    background: url("../images/hero-culdesac.jpg");
+    filter: grayscale();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    opacity: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+#text-overlay {
+    position: relative;
+    top: 50%;
+}
+
+#hero h1, #hero h4 {
+    color: white;
+}
+
+#splash-text, #hero h1, #hero h4 {
+    width: 75%;
+    margin: auto;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#hero h4 {
+    font-size: 1.25rem;
+    margin-top: .5rem;
+}
+
+#splash-text {
+    margin-top: 3rem;
 }
 
 
 /* - - - - - FOOTER STYLES - - - - - */
 
 footer {
-    margin-top: 6rem;
-    padding-top: 3rem;
+    grid-row-end: -1;
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: rgb(240, 240, 240);
+    padding: .75rem 0 .75rem;
+}
+
+footer h3, footer p {
+    width: 100%;
+    text-align: center;
 }
 
 footer img {
     width: 2rem;
     height: 2rem;
-    border-radius: 50%;
+    margin: .5rem;
 }
 
 footer ul {
-    margin: auto;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-footer li {
-    padding-right: .75rem;
-    padding-left: .75rem;
-    margin-bottom: 1rem;
+    margin: 0;
 }
 
 footer p {
     font-size: x-small;
-    text-align: center;
-    margin-bottom: 0;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
 }
-
-
-
 
 /* - - - - - MEDIA QUERIES - - - - - */
 
-@media (max-width: 300px) {
-
-    #site-title {
-        margin-bottom: 1rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav li {
-        margin-bottom: 1rem;
-    }
-}
-
-
-@media (min-width: 660px) {
-
-    nav a {
-        color: white;
-    }
-
-    header {
-        position: relative;
-        z-index: 1;
-        background-color: rgba(17, 98, 145, 50%);
-        width: 100vw;
-
-    }
-
-    nav, footer ul {
-        max-width: 700px;
-    }
-
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    footer {
-        margin-top: 0;
-    }
-
-}
