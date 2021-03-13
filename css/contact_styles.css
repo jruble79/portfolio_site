@@ -1,110 +1,53 @@
 
-#welcome > * {
-    max-width: 450px;
-    padding: 0 1.5rem;
-    margin: auto;
-}
 
-#welcome {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
+/* - - - - - FORM STYLES - - - - - */
 
-#welcome h2 {
-    text-align: center;
-
-    margin-bottom: 2rem;
-}
 
 form > * {
     display: block;
 }
-
 form {
-    max-width: 450px;
-    margin: auto;
-    margin-bottom: 6rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    width: 75%;
+    margin: 3rem auto;
 }
-
-.error {
-    font-weight: 700;
-    color: red;
-}
-
-label, button {
-    font-weight: 700;
+label {
     margin-bottom: 1rem;
 }
-
+label, button {
+    font-weight: 700;
+}
 label:not(:first-child), button {
     margin-top: 3rem;
 }
-
 input, textarea {
     outline: none;
     border: none;
     background-color: rgb(240, 240, 240);
     width: 100%;
 }
-
 input:focus, textarea:focus {
     background-color: white;
     outline: rgb(185, 185, 185) solid 3px
 }
-
 input {
     height: 3rem;
 }
-
 textarea {
     height: 12rem;
 }
-
+.error {
+    font-weight: 700;
+    color: red;
+}
 button {
+    margin: 3rem auto;
     border: none;
     padding: 1rem 3rem;
 }
-
 button:active {
     color: white;
     background-color: rgb(17, 98, 145);
 }
 
 /* - - - - - MEDIA QUERIES - - - - - */
-
-
-@media (min-width: 660px) {
-
-    #welcome, .container {
-        position: relative;
-        top: -102px;
-    }
-
-    #welcome {
-        width: 100vw;
-        height: 60vw;
-        max-height: 650px;
-        background-color: rgb(17, 98, 145);
-        margin-bottom: 0;
-    }
-
-    #welcome h2, #welcome p {
-        position: relative;
-        bottom: -50%;
-        width: 600px;
-        color: white;
-        margin: auto;
-    }
-
-    #welcome h2 {
-        margin-bottom: 3rem;
-    }
-
-    #welcome p {
-        text-align: center;
-    }
-
-}
 
