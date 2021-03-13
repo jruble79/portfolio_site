@@ -41,14 +41,18 @@
     margin: 3rem 0;
     text-align: center;
 }
+#highlights {
+    grid-row-start: 3;
+    margin: 3rem 0;
+}
 #storyhighlights {
-    margin: 6rem 0;
+    width: 75%;
+    margin: 6rem auto 3rem;
 }
 .storymod {
     margin: auto;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    width: 75%;
     border-bottom: 1px dotted rgb(168, 168, 168);
 }
 .storymod:first-child {
@@ -58,20 +62,15 @@
     border-bottom: 0;
     padding-bottom: 0;
 }
-.storymod a {
-    display: flex;
-}
-.storymod img {
+/* .storymod img {
     width: 100%;
     max-width: 100px;
     max-height: 100px;
     margin-right: 1rem;
-}
-.story {
-    align-self: center;
-}
+} */
 .story h4, .story p {
     margin: 0;
+    text-align: center;
 }
 .story h4 {
     margin-bottom: 1rem;
