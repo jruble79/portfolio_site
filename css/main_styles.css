@@ -37,13 +37,13 @@
 
 /* - - - - - STORY HIGHLIGHTS - - - - - */
 
+#highlights {
+    /* margin: 3rem 0; */
+    grid-column: 2 / 12;
+}
 #highlights h2 {
     margin: 3rem 0;
     text-align: center;
-}
-#highlights {
-    grid-row-start: 3;
-    margin: 3rem 0;
 }
 #storyhighlights {
     width: 75%;
