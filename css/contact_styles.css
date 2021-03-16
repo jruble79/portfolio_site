@@ -1,4 +1,7 @@
 
+/* - - - - - GRID SETUP - - - - - */
+
+
 
 /* - - - - - FORM STYLES - - - - - */
 
@@ -7,8 +10,9 @@ form > * {
     display: block;
 }
 form {
-    width: 75%;
-    margin: 3rem auto;
+    grid-column: 2 / 12;
+    /* width: 75%;
+    margin: 3rem auto; */
 }
 label {
     margin-bottom: 1rem;
@@ -27,7 +31,7 @@ input, textarea {
 }
 input:focus, textarea:focus {
     background-color: white;
-    outline: rgb(185, 185, 185) solid 3px
+    outline: rgb(185, 185, 185) solid 3px;
 }
 input {
     height: 3rem;
@@ -40,7 +44,7 @@ textarea {
     color: red;
 }
 button {
-    margin: 3rem auto;
+    margin: 3rem auto 0;
     border: none;
     padding: 1rem 3rem;
 }
