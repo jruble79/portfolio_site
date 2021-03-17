@@ -1,5 +1,6 @@
 
 #splash-text {
+    height: max-content;
     grid-column: 2 / 12;
 }
 
@@ -35,21 +36,17 @@
     background: rgb(150, 150, 150);
 }
 
-
-
 /* - - - - - STORY HIGHLIGHTS - - - - - */
 
-#highlights {
-    /* margin: 3rem 0; */
+#mod01, #mod02 {
     grid-column: 2 / 12;
 }
-#highlights h2 {
-    margin: 3rem 0;
+.highlights h2 {
+    margin: 0 0 3rem;
     text-align: center;
 }
 #storyhighlights {
-    width: 75%;
-    margin: 6rem auto 3rem;
+    margin: 0 auto 3rem;
 }
 .storymod {
     margin: auto;
@@ -64,12 +61,6 @@
     border-bottom: 0;
     padding-bottom: 0;
 }
-/* .storymod img {
-    width: 100%;
-    max-width: 100px;
-    max-height: 100px;
-    margin-right: 1rem;
-} */
 .story h4, .story p {
     margin: 0;
     text-align: center;
@@ -81,3 +72,17 @@
 
 /* - - - - - MEDIA QUERIES - - - - - */
 
+@media (min-width: 1200px) {
+    #mod01 {
+        grid-column: 8 / 12;
+    }
+    #splash-text, #mod02{
+        grid-column: 2 / 7;
+    }
+    #mod01 {
+        grid-row: 2 / 4;
+    }    
+    .story h4, .story p {
+        text-align: left;
+    }
+}
