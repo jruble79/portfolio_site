@@ -1,8 +1,5 @@
 
 
-/* - - - - - GRID SETUP - - - - - */
-
-
 
 /* - - - - - - - - - - - */
 
@@ -12,7 +9,6 @@ h2 {
 main, aside {
     grid-column: 2 / 12;
 }
-
 #awards {
     margin-top: 6rem;
 }
@@ -20,18 +16,20 @@ main, aside {
 
 /* - - - - - DETAILS SUMMARY STYLES - - - - - */
 
-
+#splash-text {
+    grid-column: 2 / 12;
+}
 summary::marker {
     display: none; 
 }
 details span::before { 
     content: '\00002b'; 
     color: rgb(17, 98, 145);
-  }
+}
 details[open] span::before { 
     content: '\002212'; 
     color: rgb(17, 98, 145);
-  }
+}
 summary:hover {
     cursor: pointer;
 }
@@ -76,11 +74,23 @@ details:last-child, #awards li:last-child {
 
 /* - - - - - MEDIA QUERIES - - - - - */
 
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
+    #splash-text {
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 800px) {
+    #splash-text {
+        grid-column: 2 / 8;
+        grid-row-start: 2;
+        height: max-content;
+    }
     main {
         grid-column: 2 / 8;
+        height: max-content;
     }
     aside {
         grid-column: 9 / 12;
+        grid-row: 2 / 4;
     }
 }
