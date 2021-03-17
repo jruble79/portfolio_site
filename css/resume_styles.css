@@ -74,11 +74,6 @@ details:last-child, #awards li:last-child {
 
 /* - - - - - MEDIA QUERIES - - - - - */
 
-@media (min-width: 500px) {
-    #splash-text {
-        font-size: 1.3rem;
-    }
-}
 @media (min-width: 800px) {
     #splash-text {
         grid-column: 2 / 8;
