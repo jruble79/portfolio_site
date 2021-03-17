@@ -1,5 +1,7 @@
 
-
+#splash-text {
+    grid-column: 2 / 12;
+}
 
 /* - - - - - IMAGE CAROUSEL - - - - - */
 
