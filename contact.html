@@ -37,20 +37,24 @@
     
 
     <form id="form">
+        <div class="container" id="name">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" onfocus="clearInputColor()">
+            <p></p>
+        </div>
+        <div class="container" id="email">
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="email_address" onfocus="clearInputColor()">
+            <p></p>
+        </div>
+        <div class="container" id="msg">
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message" onfocus="clearInputColor()"></textarea>
+            <p></p>
+            <button type="submit">Submit</button>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name" onfocus="clearInputColor()">
-        <p></p>
+        </div>
 
-        <label for="mail">Email:</label>
-        <input type="email" id="mail" name="email_address" onfocus="clearInputColor()">
-        <p></p>
-
-        <label for="msg">Message:</label>
-        <textarea id="msg" name="user_message" onfocus="clearInputColor()"></textarea>
-        <p></p>
-
-        <button type="submit">Submit</button>
 
     </form>
 
