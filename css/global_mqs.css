@@ -59,7 +59,7 @@ header, footer {
 /* - - - - - NAV STYLES - - - - - */
 
 header {
-    z-index: 1;
+    z-index: 2;
     padding: 3rem 0 0 0;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -119,18 +119,19 @@ nav a, nav ul {
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
-    opacity: 100;
+    opacity: 15%;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;   
+    z-index: 0;   
 }
 #text-overlay {
     grid-column: 2 / 12;
     position: relative;
     top: 60%;
+    z-index: 1;
 }
 #hero h1, #hero h4 {
     text-align: center;
@@ -206,6 +207,14 @@ footer ul {
 }
 
 @media (min-width: 800px) {
+    html {
+        background-color: rgb(17, 98, 145);
+    }
+    body {
+        background-color: white;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+
     #hero h1, #hero h4 {
         text-align: left;
     }
