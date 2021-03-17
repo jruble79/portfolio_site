@@ -157,7 +157,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    padding-bottom: .75rem;
+    padding-bottom: 3rem;
 }
 footer p {
     width: 100%;
