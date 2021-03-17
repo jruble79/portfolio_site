@@ -57,10 +57,6 @@
 .storymod:first-child {
     padding-top: 0;
 }
-.storymod:last-child {
-    border-bottom: 0;
-    padding-bottom: 0;
-}
 .story h4, .story p {
     margin: 0;
     text-align: center;
@@ -72,17 +68,52 @@
 
 /* - - - - - MEDIA QUERIES - - - - - */
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
+    #hero h1 {
+        font-size: 7rem;
+    }
+    #text-overlay {
+        top: 50%;
+    }
     #mod01 {
         grid-column: 8 / 12;
     }
-    #splash-text, #mod02{
+    #mod01 {
+        grid-row: 2 / 3;
+    }
+    #splash-text {
         grid-column: 2 / 7;
     }
-    #mod01 {
-        grid-row: 2 / 4;
-    }    
+    #splash-text p {
+        margin-top: 0;
+    }
+    #storyhighlights {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+    }
+    .storymod {
+        margin: 0 0;
+        padding: 0 0 2rem;
+    }
     .story h4, .story p {
         text-align: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    #splash-text p {
+        margin-top: 0;
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
+    #text-overlay {
+        grid-column: 2 / 12;
+    }
+    #hero h1, #hero h4 {
+        text-align: left;
+    }
+    #hero h1 {
+        font-size: 9rem;
     }
 }
