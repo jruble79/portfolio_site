@@ -54,12 +54,21 @@
     padding-bottom: 3rem;
     border-bottom: 1px dotted rgb(168, 168, 168);
 }
+.storymod a {
+    display: flex;
+    align-items: center;
+}
+.storymod img {
+    width: 100px;
+    height: 100px;
+    margin: 0 1rem 0 0
+}
 .storymod:first-child {
     padding-top: 0;
 }
 .story h4, .story p {
     margin: 0;
-    text-align: center;
+    text-align: left;
 }
 .story h4 {
     margin-bottom: 1rem;
@@ -86,27 +95,30 @@
     }
     #splash-text p {
         margin-top: 0;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
     }
     #storyhighlights {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        column-gap: 2rem;
+        column-gap: 3rem;
+    }
+    .storymod a {
+        flex-direction: column;
     }
     .storymod {
         margin: 0 0;
         padding: 0 0 2rem;
     }
-    .story h4, .story p {
-        text-align: left;
+    .storymod img {
+        width: 100%;
+        height: unset;
+        margin: 0;
+        padding: 0 0 1rem;
     }
 }
 
 @media (min-width: 1200px) {
-    #splash-text p {
-        margin-top: 0;
-        font-size: 1.2rem;
-        line-height: 1.75rem;
-    }
     #text-overlay {
         grid-column: 2 / 12;
     }
@@ -115,5 +127,9 @@
     }
     #hero h1 {
         font-size: 9rem;
+    }
+    #splash-text p {
+        font-size: 1.2rem;
+        line-height: 1.75rem;
     }
 }
