@@ -46,7 +46,7 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: max-content max-content 1fr max-content max-content;
     column-gap: 1rem;
-    row-gap: 3rem;
+    row-gap: 9rem;
 }
 header, footer {
     grid-column: 2 / 12;
