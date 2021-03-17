@@ -103,6 +103,8 @@ nav a, nav ul {
     height: max-content;
 }
 #hero {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     position: relative;
     background-color: rgba(17, 98, 145, 85%);
     height: 50vw;
@@ -126,6 +128,7 @@ nav a, nav ul {
     z-index: -1;   
 }
 #text-overlay {
+    grid-column: 2 / 12;
     position: relative;
     top: 60%;
 }
@@ -199,5 +202,26 @@ footer ul {
     }
     footer p {
         width: max-content;
+    }
+}
+
+@media (min-width: 800px) {
+    #hero h1, #hero h4 {
+        text-align: left;
+    }
+    #hero h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #hero h1 {
+        font-size: 5rem;
+    }
+    #hero h4 {
+        font-size: 1.5rem;
+    }
+    #text-overlay {
+        top: 50%;
     }
 }
