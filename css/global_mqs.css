@@ -215,7 +215,9 @@ footer ul {
         background-color: white;
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     }
-
+    #hero {
+        margin-bottom: 6rem;
+    }
     #hero h1, #hero h4 {
         text-align: left;
     }

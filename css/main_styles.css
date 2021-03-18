@@ -85,9 +85,6 @@
 /* - - - - - MEDIA QUERIES - - - - - */
 
 @media (min-width: 800px) {
-    #hero {
-        margin-bottom: 6rem;
-    }
     #hero h1 {
         font-size: 7rem;
     }
