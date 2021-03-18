@@ -1,4 +1,7 @@
 
+#splash {
+    margin-bottom: 1rem;
+}
 
 /* - - - - - FORM STYLES - - - - - */
 
@@ -28,6 +31,7 @@ input {
 }
 textarea {
     height: 12rem;
+    resize: vertical;
 }
 .error {
     font-weight: 700;
@@ -51,14 +55,14 @@ button:active {
         display: grid;
         grid-template-columns: repeat(10, fr);
     }
-    #name {
+    #user-name {
         grid-column: 1 / 3;
     }
-    #email {
+    #user-email {
         grid-column: 4 / 11;
         margin-top: 0;
     }
-    #msg {
+    #user-msg {
         grid-column: 1 / 11;
     }
 }
