@@ -41,8 +41,8 @@ msgInput.addEventListener("focusout", (event) => {
     }
 });
 
-function clearInputColor(form) {
-    if (form.target.style.background == "red") {
-        form.target.style.background = "inherit";
-    }
+function clearInputColor() {
+    if (event.target.style.background == "red") {
+        event.target.style.background = "inherit";
+    } 
 }
