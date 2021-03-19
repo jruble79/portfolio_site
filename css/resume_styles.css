@@ -88,21 +88,20 @@ details:last-child, #awards li:last-child {
     #skills h2 {
         margin-top: 0;
     }
-
+    main details span::before { 
+        content: ''; 
+    }
+    main details[open] span::before { 
+        content: ''; 
+    }
+    
 }
 
 @media (min-width: 800px) {
-    /* #splash-text {
-        grid-column: 2 / 8;
-        grid-row-start: 2;
-        height: max-content;
+    aside details span::before { 
+        content: ''; 
     }
-    main {
-        grid-column: 2 / 8;
-        height: max-content;
-    }
-    aside {
-        grid-column: 9 / 12;
-        grid-row: 2 / 4;
-    } */
+    aside details[open] span::before { 
+        content: ''; 
+    }    
 }
