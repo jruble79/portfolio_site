@@ -102,7 +102,7 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: max-content max-content;
-        background-color: rgb(240, 240, 240);
+        background-color: rgb(245, 245, 245);
         /* margin-bottom: 3rem; */
         height: max-content;
     }
@@ -110,9 +110,12 @@
         grid-column: 2 / 7;
     }
     #mod02 h2 {
-        padding-top: 6rem;
+        /* padding-top: 6rem; */
         grid-column: 2 / 12;
         grid-row: 1 / 2;
+    }
+    .highlights {
+        padding: 4rem 0;
     }
     #storyhighlights {
         grid-column: 2 / 12;
@@ -120,13 +123,14 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 3rem;
+        margin-bottom: 0;
     }
     .storymod a {
         flex-direction: column;
     }
     .storymod {
         margin: 0 0;
-        padding: 0 0 4rem;
+        padding: 0;
         border-bottom: 0;
     }
     .storymod img {
