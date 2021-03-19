@@ -208,6 +208,17 @@ footer ul {
     }
 }
 
+@media (min-width: 650px) {
+    #splash-text::first-letter {
+        font-size: 6rem;
+        display: block;
+        float: left;
+        line-height: 4.5rem;
+        margin: 0 1rem 1rem 0;
+        color: rgb(17, 98, 145);
+    }
+}
+
 @media (min-width: 800px) {
     html {
         background-color: rgb(17, 98, 145);
@@ -230,15 +241,6 @@ footer ul {
         font-size: 1.1rem;
         line-height: 1.5rem;
     }
-    #splash-text::first-letter {
-        font-size: 6rem;
-        display: block;
-        float: left;
-        line-height: 4.5rem;
-        margin: 0 1rem 1rem 0;
-        color: rgb(17, 98, 145);
-    }
-
 }
 
 @media (min-width: 1200px) {
