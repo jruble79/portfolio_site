@@ -4,15 +4,12 @@
 /* - - - - - - - - - - - */
 
 h2 {
+    margin-top: 5rem;
     text-align: center;
 }
 main, aside {
     grid-column: 2 / 12;
 }
-#awards {
-    margin-top: 6rem;
-}
-
 
 /* - - - - - DETAILS SUMMARY STYLES - - - - - */
 
@@ -87,6 +84,9 @@ details:last-child, #awards li:last-child {
     aside {
         grid-column: 9 / 12;
         grid-row: 2 / 4;
+    }
+    #skills h2 {
+        margin-top: 0;
     }
 
 }

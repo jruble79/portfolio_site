@@ -100,6 +100,7 @@ nav a, nav ul {
 #splash {
     grid-row-start: 1;
     height: max-content;
+    margin-bottom: 3rem;
 }
 #hero {
     display: grid;
@@ -107,7 +108,7 @@ nav a, nav ul {
     position: relative;
     background-color: rgba(17, 98, 145, 85%);
     height: 50vw;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     min-height: 400px;
     max-height: 600px;
 }
@@ -148,9 +149,9 @@ nav a, nav ul {
 #hero h4 {
     margin-top: .5rem;
 }
-/* #splash-text {
-    grid-column: 2 / 12;
-} */
+#splash-text p {
+    margin-top: 0;
+}
 
 
 /* - - - - - FOOTER STYLES - - - - - */
@@ -215,9 +216,9 @@ footer ul {
         background-color: white;
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     }
-    #hero {
+    #splash {
         margin-bottom: 6rem;
-    }
+    }    
     #hero h1, #hero h4 {
         text-align: left;
     }
