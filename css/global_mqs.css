@@ -204,6 +204,9 @@ footer ul {
     nav li {
         padding: 0 0;
     }
+    #splash {
+        margin-bottom: 4rem;
+    }
     footer {
         margin: unset;
         justify-content: space-between;
