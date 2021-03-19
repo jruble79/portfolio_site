@@ -28,7 +28,8 @@
 // when @media (min-width: 800px) is called
 /////////////////////////////////////////////////////////////////////
 
-// const mediaQuery = window.matchMedia("(min-width: 800px)");
+// const mediaQueryA = window.matchMedia("(min-width: 650px)");
+// const mediaQueryB = window.matchMedia("(min-width: 800px)");
 // const detailsList = document.querySelectorAll("details");
 
 // function openDetails (e) {
@@ -41,21 +42,37 @@
 //     }
 // }
 
-// mediaQuery.addListener(openDetails);
+// mediaQueryA.addEventListener("change", openDetails);
 // openDetails(mediaQuery);
 
-const mediaQuery = window.matchMedia("(min-width: 800px)");
-const detailsList = document.querySelectorAll("details");
 
-function openDetails (e) {
-    for (let i = 0; i < detailsList.length; i++) {
+const mediaQueryA = window.matchMedia("(min-width: 650px)");
+const mediaQueryB = window.matchMedia("(min-width: 800px)");
+const mainDetails = document.querySelectorAll("main details");
+const asideDetails = document.querySelectorAll("aside details");
+
+function openMain (e) {
+    for (let i = 0; i < mainDetails.length; i++) {
         if (e.matches) {
-            detailsList[i].setAttribute("open", ""); 
+            mainDetails[i].setAttribute("open", ""); 
         } else {
-            detailsList[i].removeAttribute("open");
+            mainDetails[i].removeAttribute("open");
         };
     }
 }
 
-mediaQuery.addEventListener("change", openDetails);
-openDetails(mediaQuery);
+function openAside (e) {
+    for (let i = 0; i < asideDetails.length; i++) {
+        if (e.matches) {
+            asideDetails[i].setAttribute("open", ""); 
+        } else {
+            asideDetails[i].removeAttribute("open");
+        };
+    }
+}
+
+mediaQueryA.addEventListener("change", openMain);
+openMain(mediaQueryA);
+
+mediaQueryB.addEventListener("change", openAside);
+openAside(mediaQueryB);
