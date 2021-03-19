@@ -20,7 +20,11 @@
     scroll-behavior: smooth;;
 }
 #slides > *, .slide {
+    width: 100%;
     height: 100%;
+}
+.slide {
+    object-fit: cover;
 }
 #slides > * {
     scroll-snap-align: center;
@@ -91,32 +95,50 @@
     #text-overlay {
         top: 50%;
     }
+
     #mod01 {
         grid-column: 8 / 12;
         grid-row: 2 / 3;
         padding: 0;
-        margin-bottom: 6rem;
+        align-self: end;
         border: 0;
+        margin-bottom: 0;
     }    
+    #mod01 h2 {
+        display: none;
+    }
+    #carousel {
+        max-width: 100%;
+    }
+    #slides {
+        max-height: max-content;
+    }
+    #slides > *, .slide {
+        height: 450px;
+    }
     #mod02 {
         grid-column: 1 / -1;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: max-content max-content;
         background-color: rgb(245, 245, 245);
-        /* margin-bottom: 3rem; */
+        margin-top: 6rem;
+        padding: 3rem 0;
         height: max-content;
     }
     #splash-text {
         grid-column: 2 / 7;
+        margin-bottom: 0;
+    }
+    #splash-text p:last-child {
+        margin-bottom: 0;
     }
     #mod02 h2 {
-        /* padding-top: 6rem; */
         grid-column: 2 / 12;
         grid-row: 1 / 2;
     }
     .highlights {
-        padding: 4rem 0;
+        padding: 0;
     }
     #storyhighlights {
         grid-column: 2 / 12;
@@ -154,5 +176,18 @@
     }
     #hero h4 {
         font-size: 2.25rem;
+    }
+    #mod01 {
+        z-index: 1;
+        grid-row: 1 / 3;
+    }    
+    #slides > *, .slide {
+        height: 500px;
+    }
+    #slides {
+        outline: 3rem solid white;
+    }
+    #slide-nav {
+        display: none;
     }
 }
