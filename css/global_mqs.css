@@ -108,7 +108,7 @@ nav a, nav ul {
     background-color: rgba(17, 98, 145, 85%);
     height: 50vw;
     min-height: 400px;
-    max-height: 600px;
+    max-height: 700px;
 }
 #hero::after {
     content: "";
