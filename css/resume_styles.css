@@ -94,7 +94,9 @@ details:last-child, #awards li:last-child {
     main details[open] span::before { 
         content: ''; 
     }
-    
+    details:last-child, #awards li:last-child {
+        border-bottom: 0;
+    }
 }
 
 @media (min-width: 800px) {
