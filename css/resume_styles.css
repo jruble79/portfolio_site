@@ -104,11 +104,16 @@ details:last-child, #awards li:last-child {
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
-    
     aside details span::before { 
         content: ''; 
     }
     aside details[open] span::before { 
         content: ''; 
     }    
+    #splash-text p {
+        margin-top: 0;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
 }
