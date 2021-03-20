@@ -59,6 +59,7 @@ details:last-child, #awards li:last-child {
     cursor: pointer;
     padding: .5rem;
     color: white;
+    font-size: .75rem;
     background-color: rgb(17, 98, 145);
     margin-bottom: .25rem;
 }
@@ -88,6 +89,9 @@ details:last-child, #awards li:last-child {
     #skills h2 {
         margin-top: 0;
     }
+    #skills ul {
+        text-align: left;
+    }
     main details span::before { 
         content: ''; 
     }
@@ -115,5 +119,13 @@ details:last-child, #awards li:last-child {
         font-size: 1.1rem;
         line-height: 1.5rem;
     }
-
+    summary {
+        text-align: left;
+    }
+    summary span {
+        font-size: 1.5rem;
+    }
+    summary p {
+        display: inline-block;
+    }
 }
