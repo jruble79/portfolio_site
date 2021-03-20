@@ -230,9 +230,6 @@ footer ul {
 }
 
 @media (min-width: 800px) {
-    html {
-        background-color: rgb(17, 98, 145);
-    }
     body {
         background-color: white;
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
@@ -248,6 +245,10 @@ footer ul {
 }
 
 @media (min-width: 1200px) {
+    html {
+        /* background-color: rgb(17, 98, 145); */
+        background-image: linear-gradient(rgb(17, 98, 145), rgb(255, 251, 235));
+    }
     #hero h1 {
         font-size: 5rem;
     }
