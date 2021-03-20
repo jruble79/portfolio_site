@@ -160,6 +160,10 @@
     }
     #slides {
         outline: 2rem solid white;
+        box-shadow: inset 0 0 60px rgba(0, 0, 0, .25);
+    }
+    .slide {
+        mix-blend-mode: multiply;
     }
     #slides > *, .slide {
         height: 40vw;
