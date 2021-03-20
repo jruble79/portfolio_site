@@ -119,6 +119,19 @@
     }
 }
 
+@media (min-width: 620px) {
+    #hero h1 {
+        font-size: 5rem;
+    }
+    #hero h4 {
+        font-size: 1.5rem;
+    }
+    #splash-text p {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+}
+
 @media (min-width: 800px) {
     #hero h1 {
         font-size: 7rem;
@@ -128,6 +141,10 @@
     }
     #text-overlay {
         top: 50%;
+    }
+    #splash-text p {
+        font-size: 1rem;
+        line-height: 1.25rem;
     }
     #mod01 {
         z-index: 1;
