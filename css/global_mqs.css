@@ -259,8 +259,8 @@ footer ul {
         top: 50%;
     }
     #splash-text p {
-        font-size: 1.2rem;
-        line-height: 1.75rem;
+        font-size: 1.2rem !important;
+        line-height: 1.75rem !important;
     }
     #splash-text::first-letter {
         line-height: 5.25rem;
