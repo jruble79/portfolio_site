@@ -9,11 +9,11 @@
 /* - - - - - IMAGE CAROUSEL - - - - - */
 
 #carousel {
-    max-width: 300px;
+    max-width: 100%;
     margin: auto;
 }
 #slides {
-    max-height: 300px;
+    max-height: max-content;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -85,6 +85,40 @@
 
 /* - - - - - MEDIA QUERIES - - - - - */
 
+@media (min-width: 500px) {
+    #carousel {
+        max-width: 500px;
+    }
+    #mod02 {
+        /* width: 100%; */
+        margin:auto;
+        /* border-bottom: 1px dotted rgb(168, 168, 168); */
+    }
+    #storyhighlights {
+        grid-column: 2 / 12;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(186px, 230px));
+        column-gap: 3rem;
+        margin-bottom: 0;
+    }
+    .storymod {
+        padding-top: 0;
+        padding-bottom: 4rem;
+        border-bottom: 0;
+    }    
+    .storymod a {
+        flex-direction: column;
+    }
+    .storymod img {
+        margin: 0 0 2rem 0;
+        width: 100%;
+        height: unset;
+    }
+    footer {
+        border-top: 1px dotted rgb(168, 168, 168);
+    }
+}
+
 @media (min-width: 800px) {
     #hero h1 {
         font-size: 7rem;
@@ -107,11 +141,7 @@
     #mod01 h2 {
         display: none;
     }
-    #carousel {
-        max-width: 100%;
-    }
     #slides {
-        max-height: max-content;
         outline: 2rem solid white;
     }
     #slides > *, .slide {
@@ -147,11 +177,12 @@
     }
     #storyhighlights {
         grid-column: 2 / 12;
-        grid-row-start: 2;
-        display: grid;
+        /* grid-row-start: 2; */
+        /* display: grid; */
         grid-template-columns: repeat(4, 1fr);
-        column-gap: 3rem;
-        margin-bottom: 0;
+        /* column-gap: 3rem;
+        margin-bottom: 0; */
+        border-bottom: 0;
     }
     .storymod a {
         flex-direction: column;
@@ -159,13 +190,16 @@
     .storymod {
         margin: 0 0;
         padding: 0;
-        border-bottom: 0;
+        /* border-bottom: 0; */
     }
     .storymod img {
-        width: 100%;
-        height: unset;
+        /* width: 100%;
+        height: unset; */
         margin: 0;
         padding: 0 0 2rem;
+    }
+    footer {
+        border: 0;
     }
 }
 
