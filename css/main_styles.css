@@ -95,10 +95,10 @@
     #text-overlay {
         top: 50%;
     }
-
     #mod01 {
+        z-index: 1;
         grid-column: 8 / 12;
-        grid-row: 2 / 3;
+        grid-row: 1 / 3;
         padding: 0;
         align-self: end;
         border: 0;
@@ -112,9 +112,14 @@
     }
     #slides {
         max-height: max-content;
+        outline: 2rem solid white;
     }
     #slides > *, .slide {
-        height: 450px;
+        height: 40vw;
+        max-height: 425px;
+    }
+    #slide-nav {
+        display: none;
     }
     #mod02 {
         grid-column: 1 / -1;
@@ -177,17 +182,10 @@
     #hero h4 {
         font-size: 2.25rem;
     }
-    #mod01 {
-        z-index: 1;
-        grid-row: 1 / 3;
-    }    
     #slides > *, .slide {
-        height: 500px;
+        max-height: 500px;
     }
     #slides {
         outline: 3rem solid white;
-    }
-    #slide-nav {
-        display: none;
     }
 }
