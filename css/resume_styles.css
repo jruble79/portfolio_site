@@ -119,10 +119,10 @@ details:last-child, #awards li:last-child {
         font-size: 1.1rem;
         line-height: 1.5rem;
     }
-    summary {
+    main summary {
         text-align: left;
     }
-    summary span {
+    main summary span {
         font-size: 1.5rem;
     }
     summary p {
