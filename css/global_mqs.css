@@ -237,6 +237,25 @@ footer ul {
     #splash {
         margin-bottom: 6rem;
     }    
+    #hero h1 {
+        transform: translateY(12rem);
+        animation: up 700ms ease-out forwards;
+        opacity: 0%;
+    }
+    #hero h4 {
+        transform: translateY(6rem);
+        animation: up 1500ms ease-out forwards;
+        opacity: 0%;
+    }
+    #text-overlay {
+        overflow: hidden;
+    }
+    @keyframes up {
+        100% {
+            transform: translateY(0);
+            opacity: 100%;
+        }
+    }
     #splash-text p {
         margin-top: 0;
         /* font-size: 1.1rem;
