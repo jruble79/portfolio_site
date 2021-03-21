@@ -6,6 +6,10 @@
     margin-bottom: 2rem;
 }
 
+#mod01, #mod02 {
+    grid-column: 2 / 12;
+}
+
 /* - - - - - IMAGE CAROUSEL - - - - - */
 
 #carousel {
@@ -13,9 +17,8 @@
     margin: auto;
 }
 #slides {
-    max-height: max-content;
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;;
 }
@@ -44,9 +47,6 @@
 
 /* - - - - - STORY HIGHLIGHTS - - - - - */
 
-#mod01, #mod02 {
-    grid-column: 2 / 12;
-}
 #mod01 {
     margin-bottom: 3rem;
     padding: 3rem 0;
@@ -91,7 +91,7 @@
     }
     #mod02 {
         /* width: 100%; */
-        margin:auto;
+        margin: auto;
         /* border-bottom: 1px dotted rgb(168, 168, 168); */
     }
     #storyhighlights {
