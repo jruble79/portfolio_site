@@ -35,7 +35,6 @@
             </div>
         </div>
     </section>
-    
 
     <form id="form">
         <div class="container" id="user-name">
@@ -52,12 +51,13 @@
             <label for="msg">Message:</label>
             <textarea id="msg" name="user_message" onfocus="clearInputColor()" required></textarea>
             <p></p>
-            <button type="submit">Submit</button>
-
+            <button type="button" id="button" onclick="displayThanks()">Submit</button>
         </div>
-
-
     </form>
+
+    <section id="generated-msg">
+
+    </section>
 
     <footer>
         <!-- <h3>Let's Stay Connected</h3> -->

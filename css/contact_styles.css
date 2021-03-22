@@ -2,9 +2,13 @@
 
 /* - - - - - FORM STYLES - - - - - */
 
-
-form {
+form, #generated-msg {
     grid-column: 2 / 12;
+}
+#form {
+    transition-property: opacity;
+    transition: .4s;
+    opacity: 100;
 }
 .container:not(:first-child) {
     margin-top: 2rem;
@@ -44,6 +48,28 @@ button:active {
     color: white;
     background-color: rgb(17, 98, 145);
 }
+
+/* - - - - - GENERATED MESSAGE STYLES - - - - - */
+
+#generated-msg h4 {
+    animation: fade 500ms ease-out forwards;
+    animation-delay: 500ms;
+    opacity: 0%;
+}
+#generated-msg p {
+    animation: fade 500ms ease-out forwards;
+    animation-delay: 500ms;
+    opacity: 0%;
+}
+@keyframes fade {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
 
 /* - - - - - MEDIA QUERIES - - - - - */
 
