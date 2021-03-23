@@ -206,6 +206,10 @@ footer ul {
     justify-content: center;
     margin: 0;
 }
+footer img:hover {
+    transition: transform .15s ease;
+    transform: scale(1.75);
+}
 
 /* - - - - - MEDIA QUERIES - - - - - */
 
