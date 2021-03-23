@@ -12,6 +12,8 @@ This is a speculative website that would host creative work from my professional
     - Resume.html goes two columns at 650px
 - CSS Animation
     - All pages have sliding animation for text-overlay h1 and h4 elements
+    - Footer icons enlarge on hover state
+    - Index.html changes the image carousel to a fading slideshow at viewport widths 800px and over
     - On contact.html the form dissolves after clicking "Submit" and the inputs are displayed with a sliding animation.
 
 ### Javascript Features
