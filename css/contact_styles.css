@@ -52,13 +52,13 @@ button:active {
 /* - - - - - GENERATED MESSAGE STYLES - - - - - */
 
 #generated-msg h4 {
-    animation: fade 500ms ease-out forwards;
-    animation-delay: 500ms;
+    animation: fade 2s ease-out forwards;
+    animation-delay: 1.5s;
     opacity: 0%;
 }
 #generated-msg p {
-    animation: fade 500ms ease-out forwards;
-    animation-delay: 500ms;
+    animation: fade 2s ease-out forwards;
+    animation-delay: 1.5s;
     opacity: 0%;
 }
 @keyframes fade {
