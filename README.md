@@ -23,7 +23,7 @@ This is a speculative website that would host creative work from my professional
     - Index.html uses keyframes to crossfade images.
     - On contact.html the form dissolves after clicking "Submit" and the inputs are displayed back to the user with a sliding animation.
 
-### Javascript Features
+### JavaScript Features
 - Create JavaScript loop to dynamically display HTML
     - Resume.html loops through Details elements and opens details lists by adding an "open" attribute when window size matches media queries.
 - Show/Hide Elements
