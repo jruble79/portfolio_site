@@ -1,18 +1,33 @@
 
 
 # Jeff Ruble's Final Project
-#### For Code Louisville's Spring 2021 front-end development course
+#### For Code Louisville's Spring 2021 front-end web development course
 
 ---
 
 ## Project description: 
-This is a speculative website that would host creative work from my professional career as a newspaper layout designer and graphic artist/illustrator. It consists of a homepage with a strong visual presense, a resume page and a separate contact form that would be used to let visitors send messages to me. The site has been verified to work with Chrome, Safari, Firefox and Edge.
+This is a speculative website that would host work from my professional career as a newspaper layout designer and graphic artist/illustrator. It consists of a homepage with a strong visual presense, a resume page and a separate contact form that would be used to let visitors send messages to me. 
+
+The three total pages can be accessed via the main navigation links at the top of the designs. Links for the Latest News section currently go nowhere.
+
+The site has been verified to work with Chrome, Safari, Firefox and Edge.
 
 ---
 
+### Media Queries
+- Index.html
+    - @500px Latest News section moves into two column layout.
+    - @800px Multi- column/row layout engaged for a more dynamic display.
+- Resume.html
+    - @650px Two column layout engaged.
+- Contact.html
+    - @800px Puts Name and Email fields side by side.
+
 ### CSS Features
+- Navigation Menu
+    - Always visible, but moves from a layout where the site name is above the two side-by-side links in a mobile view into a horizontal arrangememt for tablet-sized screens and larger.
 - Flexbox and CSS Grid
-    - At 500px Latest News section goes into two column layout using CSS Grid. The images and text in those modules switch to a vertical layout using Flexbox.
+    - At 500px Latest News section changes layout using CSS Grid. The images and text in those modules switch to a vertical layout using Flexbox.
     - Index.html uses Grid to move into a multi-row/column layout starting at 800px. The Latest News section moves into a four column layout.
     - Resume.html uses Grid to go into two columns at 650px.
     - Contact.html uses Grid to place the Name and Email inputs side by side at 800px.
