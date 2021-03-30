@@ -131,8 +131,11 @@ MEDIA QUERIES ------------------------------
 }
 
 @media (min-width: 500px) {
-    #carousel {
+    #carousel, #splash-text {
         max-width: 500px;
+    }
+    #splash-text {
+        margin: 0 auto 2rem;
     }
     #mod02 {
         margin: auto;
