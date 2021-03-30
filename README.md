@@ -56,3 +56,4 @@ The site has been verified to work with Chrome, Safari, Firefox and Edge.
     - For all inputs: Click into the input and then leave it without entering anything by changing focus either through the tab key or a click away. An error message should appear and the input color change to a light yellow. 
     - For the email field, try inputing an address without the "@" character. An error message should appear and the input color change to a light yellow. 
     - Correct the errors by entering any text into the Name and Message fields. Add an email address with an "@" character into the Email field. For each, the error message should clear when focus leaves the input.
+    - Click "Submit" and see a thank you message slide in over the blue image area and shortly after your message animates into the space where the form was.
