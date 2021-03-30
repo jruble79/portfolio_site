@@ -10,9 +10,18 @@
     grid-column: 2 / 12;
 }
 
-/* - - - - - IMAGE CAROUSEL - - - - - */
+/* -----------------------------------------
+--------------------------------------------
+IMAGE SLIDESHOW ----------------------------
+--------------------------------------------
+----------------------------------------- */
 
-
+#mod01 {
+    margin-bottom: 3rem;
+    padding: 3rem 0;
+    border-top: 1px dotted rgb(168, 168, 168);
+    border-bottom: 1px dotted rgb(168, 168, 168);
+}
 #carousel {
     margin: auto;
     position: relative;
@@ -45,7 +54,6 @@
 #slide-4 {
     animation: fade-4 20s infinite;
 }
-
 @keyframes fade-1 {
     0% {opacity: 1;}
     25% {opacity: 0;}
@@ -75,15 +83,12 @@
     100% {opacity: 0;}
 }
 
+/* -----------------------------------------
+--------------------------------------------
+LATEST NEWS --------------------------------
+--------------------------------------------
+----------------------------------------- */
 
-/* - - - - - STORY HIGHLIGHTS - - - - - */
-
-#mod01 {
-    margin-bottom: 3rem;
-    padding: 3rem 0;
-    border-top: 1px dotted rgb(168, 168, 168);
-    border-bottom: 1px dotted rgb(168, 168, 168);
-}
 .highlights h2 {
     margin: 0 0 3rem;
     text-align: center;
@@ -113,17 +118,18 @@
     margin-bottom: 1rem;
 }
 
-
-/* - - - - - MEDIA QUERIES - - - - - */
+/* -----------------------------------------
+--------------------------------------------
+MEDIA QUERIES ------------------------------
+--------------------------------------------
+----------------------------------------- */
 
 @media (min-width: 500px) {
     #carousel {
         max-width: 500px;
     }
     #mod02 {
-        /* width: 100%; */
         margin: auto;
-        /* border-bottom: 1px dotted rgb(168, 168, 168); */
     }
     #storyhighlights {
         grid-column: 2 / 12;
@@ -229,11 +235,7 @@
     }
     #storyhighlights {
         grid-column: 2 / 12;
-        /* grid-row-start: 2; */
-        /* display: grid; */
         grid-template-columns: repeat(4, 1fr);
-        /* column-gap: 3rem;
-        margin-bottom: 0; */
         border-bottom: 0;
     }
     .storymod a {
@@ -242,11 +244,8 @@
     .storymod {
         margin: 0 0;
         padding: 0;
-        /* border-bottom: 0; */
     }
     .storymod img {
-        /* width: 100%;
-        height: unset; */
         margin: 0;
         padding: 0 0 2rem;
     }
