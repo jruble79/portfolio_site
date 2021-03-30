@@ -14,7 +14,7 @@ The site has been verified to work with Chrome, Safari, Firefox and Edge.
 
 ---
 
-### Media Queries
+### Major Media Queries
 - Index.html
     - @500px Latest News section moves into two column layout.
     - @800px Multi- column/row layout engaged for a more dynamic display.
@@ -25,7 +25,7 @@ The site has been verified to work with Chrome, Safari, Firefox and Edge.
 
 ### CSS Features
 - Navigation Menu
-    - Always visible, but moves from a layout where the site name is above the two side-by-side links in a mobile view into a horizontal arrangememt for tablet-sized screens and larger.
+    - Always visible, but moves from a layout where the site name is above the two side-by-side links in a mobile view into a horizontal arrangement for tablet-sized screens and larger.
 - Flexbox and CSS Grid
     - At 500px Latest News section changes layout using CSS Grid. The images and text in those modules switch to a vertical layout using Flexbox.
     - Index.html uses Grid to move into a multi-row/column layout starting at 800px. The Latest News section moves into a four column layout.
