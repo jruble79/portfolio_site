@@ -184,10 +184,10 @@ SPLASH STYLES ------------------------------
 DROP CAP -----------------------------------
 ----------------------------------------- */
 #splash-text span {
-    font-size: 4rem;
+    font-size: 4.75rem;
     display: block;
     float: left;
-    line-height: 3rem;
+    line-height: 3.5rem;
     margin: 0 1rem 1rem 0;
     color: rgb(17, 98, 145);
 }
@@ -266,8 +266,8 @@ MEDIA QUERIES ------------------------------
         margin-bottom: 4rem;
     }
     #splash-text span {
-    font-size: 5rem;
-    line-height: 4rem;
+    font-size: 5.5rem;
+    line-height: 4.25rem;
     }
     footer {
         margin: unset;
