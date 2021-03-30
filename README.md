@@ -48,6 +48,11 @@ The site has been verified to work with Chrome, Safari, Firefox and Edge.
 - Contact Form
     - Checks for blank inputs or missing @ symbols for email.
     - Displays error messages aligned to input fields and colors those fields until corrected.
+    - Disables the "Submit" button until all fields are valid.
     - Captures input values and displays them back to the user after hitting "Submit".
 - Display three variables
     - Contact.html captures the Name, Email and Message values and displays them back to the user by replacing the form element when "Submit" button is clicked.
+- Try This
+    - For all inputs: Click into the input and then leave it without entering anything by changing focus either through the tab key or a click away. An error message should appear and the input color change to a light yellow. 
+    - For the email field, try inputing an address without the "@" character. An error message should appear and the input color change to a light yellow. 
+    - Correct the errors by entering any text into the Name and Message fields. Add an email address with an "@" character into the Email field. For each, the error message should clear when focus leaves the input.
