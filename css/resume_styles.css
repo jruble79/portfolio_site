@@ -21,11 +21,11 @@ summary::marker {
     display: none; 
 }
 details span::before { 
-    content: '\00002b'; 
+    content: '\00002b' ' '; 
     color: rgb(17, 98, 145);
 }
 details[open] span::before { 
-    content: '\002212'; 
+    content: '\002212' ' '; 
     color: rgb(17, 98, 145);
 }
 summary:hover {
@@ -37,6 +37,9 @@ summary:focus {
 summary {
     text-align: center;
     list-style: none;
+}
+summary::-webkit-details-marker {
+    display: none;
 }
 summary p, details p {
     margin-bottom: 0;
