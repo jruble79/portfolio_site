@@ -12,6 +12,8 @@ The three total pages can be accessed via the main navigation links at the top o
 
 The site has been verified to work with Chrome, Safari, Firefox and Edge.
 
+[View the Figma design sketches](https://www.figma.com/file/5m5eEvIh7qvobNaw6AtLR5/FEWD-Course-Portfolio-Site?node-id=0%3A1).
+
 ---
 
 ### Major Media Queries
